@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Get Started - Loose It!
+        </title>
+        <link rel="stylesheet" href="../css/weight.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:ital,wght@1,500&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <img src="https://assets.loseit.com/website/corporate/LoseIt_Logo_NoTagline_FullColor.svg" alt="logo">
+            <div class="heading" id="heading">
+                <h2>
+                    Calorie counting comes down to simple math. Just follow a calorie budget to eat less than you burn and lose weight. Let's find your calorie budget now.
+                </h2>
+            </div>
+            <!-- Weight input box -->
+            <div class="input_box_1" id="input_box_1">
+                <h2>Current Weight</h2>
+                <div>
+                    <input type="number" id="current_weight" required class="weight">
+                    <select id="current_units" name="current_unit" class="weight_1">
+                    <option value="lb">lb</option>
+                    <option value="kg">kg</option>
+                    </select>
+                </div>
+                <h2>Goal Weight</h2>
+                <div>
+                    <input type="number" id="goal_weight" required class="weight">
+                    <select id="goal_units" name="goal_unit" class="weight_1">
+                    <option value="lb">lb</option>
+                    <option value="kg">kg</option>
+                    </select>
+                </div>
+                <button id="weight_input" class="weight_input">Continue</button>
+                <p>To create your personalized weight loss plan, Lose It! uses BMR (Basal Metabolic Rate) to calculate your calorie budget, which requires weight, height, biological sex and age as inputs.</p>
+            </div>  
+            <!-- Height input box -->
+            <div class="input_box_2" id="input_box_2" style="display: none;">
+                <h2>What's your height?</h2>
+                <div>
+                    <input type="number" id="height" required class="weight">
+                    <select id="height_units" name="current_unit" class="weight_1">
+                    <option value="cm">cm</option>
+                    <option value="m">m</option>
+                    </select>
+                </div>
+                <button id="height_input" class="weight_input">Continue</button>
+                <p>To create your personalized weight loss plan, Lose It! uses BMR (Basal Metabolic Rate) to calculate your calorie budget, which requires weight, height, biological sex and age as inputs.</p>
+            </div>
+            <!-- Gender input box -->
+            <div class="input_box_3" id="input_box_3" style="display: none;">
+                <h2>Select your biological sex:</h2>
+                <button id="female" class="weight_input">Female</button>
+                <button id="male" class="weight_input">Male</button>
+                <p>To create your personalized weight loss plan, Lose It! uses BMR (Basal Metabolic Rate) to calculate your calorie budget, which requires weight, height, biological sex and age as inputs.</p>
+            </div>
+            <!-- Birthday input box -->
+            <div class="input_box_4" id="input_box_4" style="display: none;">
+                <h2>When's your birthday?</h2>
+                <input type="text" id="birthday" required placeholder = "dd-mm-yyyy" class="weight birthday">
+                <button id="birthday_input" class="weight_input">Continue</button>
+                <p>To create your personalized weight loss plan, Lose It! uses BMR (Basal Metabolic Rate) to calculate your calorie budget, which requires weight, height, biological sex and age as inputs.</p>
+            </div>
+            <div class="input_box_4" id="input_box_5" style="display: none;">
+                <h2>Your personal weight loss plan is ready.</h2>
+            </div>
+            <div id="main"></div>
+            <footer class="background"></footer>
+        </div>
+        <script src="../js/weight.js"></script>
+    </body>
+</html>
