@@ -57,7 +57,7 @@ nav {
 }
 .left {
     width: 35%;
-    height: 1000px;
+    height: fit-content;
     margin: 40px;
 }
 
@@ -81,9 +81,9 @@ nav {
     width: 120px;
     border-radius: 5px;
     justify-content: space-evenly;
-    padding: 3px;
+    padding: 1px;
     background-color: #EDEDEE;
-    margin-right: 40px;
+    margin-right: 30px;
     color: rgb(75, 75, 75);
     cursor: pointer;
 }
@@ -96,7 +96,6 @@ nav {
 }
 .foodType {
     position: relative;
-    /* display: inline-block; */
 }
 .dropdown__food {
     display: none;
@@ -166,11 +165,11 @@ nav {
 .search__food{
     width: 150px;
     height: 20px;
-    padding-left: 5px;
+    padding-left: 4px;
     background-color: white;
     color: rgb(168, 168, 168);
-    border-radius: 3px;
-    font-size: 13px;
+    border-radius: 4px;
+    font-size: 12px;
     font-style: italic;
     border: 1px solid rgb(209, 208, 208);
 }
@@ -188,7 +187,7 @@ nav {
 }
 .right {
     width: 22%;
-    height: 1000px;
+    height: fit-content;
     /* border: 1px solid blue; */
     margin: 40px;
 }
@@ -296,6 +295,7 @@ nav {
     border-radius: 3px;
     float: right;
     margin-top: -15px;
+    cursor: pointer;
 }
 .right__data__bottom__box__kg > input {
     width: 40px;
@@ -335,4 +335,37 @@ nav {
 #showMore  {
     font-size: 12px;
     text-decoration: none;
+}
+#showMore:hover {
+    text-decoration: underline;
+    color: #1A76C0;
+}
+.footer {
+    clear: both;
+}
+.footer__line {
+    width: 60%;
+    margin: 5px  auto;
+    height: 1px;
+    background-color: #aaacad;
+}
+.footer__links {
+    display: flex;
+    justify-content: center;
+}
+.footer__links > a {
+    font-size: 11px;
+    color: #aaacad;
+    margin: 6px 8px;
+    text-decoration: none;
+}
+.footer__links > a:hover {
+    text-decoration: underline;
+    color:#6FB8E7;
+}
+.footer__text {
+    font-size: 11px;
+    color: #aaacad;
+    text-align: center;
+    margin-bottom: 10px;
 }

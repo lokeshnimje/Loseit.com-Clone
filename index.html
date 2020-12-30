@@ -28,131 +28,146 @@
         </div>
     </nav>
     <img id="logo" src="https://i.imgur.com/4s7Meq5.png" alt="logo">
-    <div class="container">
-        <div class="left">
-            <div class="left__container__btn">
-                <div class="add__btn foodType">
-                    <img src="https://www.flaticon.com/svg/static/icons/svg/45/45200.svg" alt="add_food-icon">
-                    <h5>Add Food</h5>
-                    <div class="dropdown__food">
-                        <p>Breakfast</p>
-                        <p>Lunch</p>
-                        <p>Snacks</p>
-                        <p>Dinner</p>
+        <div class="container">
+            <div class="left">
+                <div class="left__container__btn">
+                    <div class="add__btn foodType">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/45/45200.svg" alt="add_food-icon">
+                        <h5>Add Food</h5>
+                        <div class="dropdown__food">
+                            <p>Breakfast</p>
+                            <p>Lunch</p>
+                            <p>Snacks</p>
+                            <p>Dinner</p>
+                        </div>
+                    </div>
+                    <div class="add__btn">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/233/233146.svg"alt="add_Exercise-icon">
+                        <h5>Add Exercise</h5>
                     </div>
                 </div>
-                <div class="add__btn">
-                    <img src="https://www.flaticon.com/svg/static/icons/svg/233/233146.svg"alt="add_Exercise-icon">
-                    <h5>Add Exercise</h5>
-                </div>
-            </div>
-            <div class="left__container">
-                <div class="left__container__header">
-                    <h6>Budget</h6>
-                    <h6>Food</h6>
-                    <h6>Exercise</h6>
-                    <h6>Net</h6>
-                    <h6>Under</h6>
-                </div>
-                <div class="left__container__header__value">
-                    <h6>1,579</h6>
-                    <h6>-</h6>
-                    <h6>-</h6>
-                    <h6>-</h6>
-                    <h6 id="header__value__selected">1,579</h6>
-                </div>
-                <div class="line"></div>
-                <div class="left__container__mealType">
-                    <h5>Breakfast: 0</h5>
-                    <div class="search__food">Q Search & add food</div>
-                </div>
-                <div class="left__container__food__box">
-                    <p>No food logged for breakfast</p>
-                </div>
-                <div class="left__container__mealType">
-                    <h5>Lunch: 0</h5>
-                    <div class="search__food">Q Search & add food</div>
-                </div>
-                <div class="left__container__food__box">
-                    <p>No food logged for lunch</p>
-                </div>
-                <div class="left__container__mealType">
-                    <h5>Dinner: 0</h5>
-                    <div class="search__food">Q Search & add food</div>
-                </div>
-                <div class="left__container__food__box">
-                    <p>No food logged for snacks</p>
-                </div>
-                <div class="left__container__mealType">
-                    <h5>Exercise: 0</h5>
-                    <div class="search__food">Q Search & add exercise</div>
-                </div>
-                <div class="left__container__food__box">
-                    <p>No exercise logged for today</p>
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <div class="right__data">
-                <div class="right__data__days">
-                    <a href="">My Day</a>
-                    <a href="">My Week</a>
-                    <a href="">My Nutrients</a>
-                </div>
-                <div class="right__data__result"></div>
-            </div>
-            <div class="right__premium">
-                <a href="">X</a>
-                <img src="data:image/png;base64,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" alt="premium-logo">
-                <h5>Hey Lokesh, Do more with Lose It! Premium</h5>
-                <p>Plan meals, customize goals and more!</p>
-            </div>
-            <div class="right__data">
-                <div class="right__data__days">
-                    <p>Weight</p>
-                </div>
-                <div class="right__data__result">
-                    <div class="right__data__bottom__left">
-                        <img src="https://www.iconsdb.com/icons/preview/green/down-xxl.png" alt="down arrow">
-                        <h3> 0 kg</h3>
-                        <p>so far</p>
+                <div class="left__container">
+                    <div class="left__container__header">
+                        <h6>Budget</h6>
+                        <h6>Food</h6>
+                        <h6>Exercise</h6>
+                        <h6>Net</h6>
+                        <h6>Under</h6>
                     </div>
-                    <div class="right__data__bottom__box">
-                        <p>You'll reach your goal of losing -3 kg on dec 29, 2020</p>
-                        <div class="line"></div>
-                        <p>today's weight</p>
-                        <div class="right__bottom__input__data">
-                            <div class="right__data__bottom__box__kg">
-                                <input type="text" placeholder="57">
-                                <p>kg</p>
+                    <div class="left__container__header__value">
+                        <h6>1,579</h6>
+                        <h6>-</h6>
+                        <h6>-</h6>
+                        <h6>-</h6>
+                        <h6 id="header__value__selected">1,579</h6>
+                    </div>
+                    <div class="line"></div>
+                    <div class="left__container__mealType">
+                        <h5>Breakfast: 0</h5>
+                        <input type="text" placeholder="Q Search & add food" class="search__food">
+                    </div>
+                    <div class="left__container__food__box">
+                        <p>No food logged for breakfast</p>
+                    </div>
+                    <div class="left__container__mealType">
+                        <h5>Lunch: 0</h5>
+                        <input type="text" placeholder="Q Search & add food" class="search__food">
+                    </div>
+                    <div class="left__container__food__box">
+                        <p>No food logged for lunch</p>
+                    </div>
+                    <div class="left__container__mealType">
+                        <h5>Dinner: 0</h5>
+                        <input type="text" placeholder="Q Search & add food" class="search__food">
+                    </div>
+                    <div class="left__container__food__box">
+                        <p>No food logged for snacks</p>
+                    </div>
+                    <div class="left__container__mealType">
+                        <h5>Exercise: 0</h5>
+                        <input type="text" placeholder="Q Search & add exercise" class="search__food">
+                    </div>
+                    <div class="left__container__food__box">
+                        <p>No exercise logged for today</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right__data">
+                    <div class="right__data__days">
+                        <a href="">My Day</a>
+                        <a href="">My Week</a>
+                        <a href="">My Nutrients</a>
+                    </div>
+                    <div class="right__data__result"></div>
+                </div>
+                <div class="right__premium">
+                    <a href="">X</a>
+                    <img src="data:image/png;base64,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" alt="premium-logo">
+                    <h5>Hey Lokesh, Do more with Lose It! Premium</h5>
+                    <p>Plan meals, customize goals and more!</p>
+                </div>
+                <div class="right__data">
+                    <div class="right__data__days">
+                        <p>Weight</p>
+                    </div>
+                    <div class="right__data__result">
+                        <div class="right__data__bottom__left">
+                            <img src="https://www.iconsdb.com/icons/preview/green/down-xxl.png" alt="down arrow">
+                            <h3> 0 kg</h3>
+                            <p>so far</p>
+                        </div>
+                        <div class="right__data__bottom__box">
+                            <p>You'll reach your goal of losing -3 kg on dec 29, 2020</p>
+                            <div class="line"></div>
+                            <p>today's weight</p>
+                            <div class="right__bottom__input__data">
+                                <div class="right__data__bottom__box__kg">
+                                    <input type="text" placeholder="57">
+                                    <p>kg</p>
+                                </div>
+                                <button>Record</button>
                             </div>
-                            <button>Record</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="right__data">
-                <div class="right__data__days">
-                    <a href="">Activities</a>
-                    <a href="">Friends</a>
-                    <a href="">Challenges</a>
-                    <a href="">Groups</a>
-                </div>
-                <div class="right__data__result activities">
-                    <div class="right__data__activities">
-                        <p>Write a comment</p>
-                        <input type="text">
+                <div class="right__data">
+                    <div class="right__data__days">
+                        <a href="">Activities</a>
+                        <a href="">Friends</a>
+                        <a href="">Challenges</a>
+                        <a href="">Groups</a>
                     </div>
-                </div>
-                <div class="right__data__activities__comment">
-                    <p>I earned the Welcome Aboard badge!</p>
-                    <p>9 hours ago</p>
-                    <div>
-                    <div class="line"></div>
-                    <a id="showMore" href="">Show More</a>
+                    <div class="right__data__result activities">
+                        <div class="right__data__activities">
+                            <p>Write a comment</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="right__data__activities__comment">
+                        <p>I earned the Welcome Aboard badge!</p>
+                        <p>9 hours ago</p>
+                        <div>
+                        <div class="line"></div>
+                        <a id="showMore" href="">Show More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="footer">
+        <div class="footer__line"></div>
+        <div class="footer__links">
+           <a href="">Jobs</a>
+           <a href="">Support</a>
+           <a href="">Blog</a>
+           <a href="">Terms of Service</a>
+           <a href="">Privacy</a>
+           <a href="">Advisors</a>
+           <a href="">About</a>
+        </div>
+        <div class="footer__text">@ Copyright FitNow, Inc.All Rights Reserved<div>
+    </div>
+    
 </body>
 </html>
