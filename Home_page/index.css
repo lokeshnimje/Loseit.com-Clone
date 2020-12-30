@@ -11,7 +11,7 @@ nav {
     color: white;
     font-size: 12px;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     position: relative;
 }
 .nav__menu {
@@ -23,6 +23,9 @@ nav {
     margin: 6px;
     padding: 3px 8px;
     border-radius: 3px;
+}
+.nav__menu > a > img {
+    width: 16px;
 }
 
 .nav__menu > a:hover{
@@ -36,11 +39,13 @@ nav {
 }
 #logo {
     position: absolute;
-    left: 110px;
+    left: 230px;
     top: -7px;
     width: 5%;
 }
-
+.link {
+    margin-left: 100px;
+}
 .link > a{
     padding: 0px;
     margin: 12px 4px;
@@ -54,10 +59,11 @@ nav {
     display: flex;
     justify-content: center;
     padding: 20px;
+    max-height: 1200px;
 }
 .left {
     width: 35%;
-    height: fit-content;
+    /* height: fit-content; */
     margin: 40px;
 }
 
@@ -187,7 +193,7 @@ nav {
 }
 .right {
     width: 22%;
-    height: fit-content;
+    /* height: fit-content; */
     /* border: 1px solid blue; */
     margin: 40px;
 }
@@ -282,9 +288,7 @@ nav {
     font-weight: bold;
 
 }
-.right__bottom__input__data {
 
-}
 .right__bottom__input__data > button {
     background-color: #008000;
     color: white;
@@ -307,6 +311,7 @@ nav {
     margin: 0px
 }
 .right__data__activities {
+    width: 100%;
     font-size: 11px;
     font-weight: bold;
 }
@@ -319,26 +324,113 @@ nav {
 .activities {
     background-color: #F8F8F8;
 }
+#textarea {
+    max-height: 50px;
+}
+.comment__box {
+    display: block;
+    width: 100%;
+    height: 400px;
+    padding: 0px 15px;
+    background-color:#F7F8F9 ;
+    /* display: flex; */
+}
+.comment__box__textarea > p{
+    font-size: 11px;
+    font-weight: bold;
+}
+.comment__box__textarea > button {
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(224, 221, 221);
+    padding: 5px;
+    cursor: pointer;
+}
+.table__comment {
+    max-width: 100%;
+    max-height: 100px;
+}
+.commentList {
+    border: 1px solid rgb(204, 203, 203);
+    border-radius: 10px;
+    max-width: 300px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.row {
+    font-size: 10px;
+    color: grey;
+}
+.row__comment {
+    font-size: 12px;
+}
+#taskList {
+    max-width: 300px;
+}
+#deletComnt{
+    background-color: #F7F8F9;
+    font-size: 11px;
+    padding: 2px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    color: rgb(202, 36, 36);
+}
+#profileImg {
+    width: 20px;
+    height: 20px;
+}
 .right__data__activities__comment {
     background-color: white;   
     padding: 5px 20px;
 }
-.right__data__activities__comment > p:nth-of-type(1) {
-    font-size: 11px;
-    margin: 0px;
-}
+
 .right__data__activities__comment > p:nth-of-type(2) {
     font-size: 10px;
     color: grey;
     margin: 0px;
 }
-#showMore  {
+.right__data__days > a:hover {
+    text-decoration: underline;
+}
+#activities {
+    color: #2C479B;
+}
+
+.right__friends {
+    padding: 7px;
+    /* display: none; */
+}
+.right__friends > h5 , p {
+    margin: 3px;
+    font-size: 12px;
+}
+.addFriend {
+    border: 1px solid grey;
+    max-width: 85px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+.addFriend > img {
+    width: 15px;
+}
+.addFriend > a {
+    color: rgb(88, 88, 88);
     font-size: 12px;
     text-decoration: none;
 }
-#showMore:hover {
-    text-decoration: underline;
-    color: #1A76C0;
+.challenges {
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    color: grey;
+    font-size: 12px;
 }
 .footer {
     clear: both;
