@@ -18,7 +18,7 @@
             <a href="">Forums</a>
             <a href="">Apps & Devices</a>
             <a href="">Messages</a>
-            <a href="">Settings</a>
+            <a href=""><img src="https://cdn2.iconfinder.com/data/icons/basic-ui-color/38/Settings-512.png" alt="setting"></a>
         </div>
         <div class="nav__menu link">
             <a href="">Lokesh</a>
@@ -98,7 +98,7 @@
                     <div class="line"></div>
                     <div class="left__container__mealType">
                         <h5>Breakfast: 0</h5>
-                        <input type="text" placeholder="Q Search & add food" class="search__food" id="enter_breakfast">
+                        <input type="text" placeholder=" Search & add food" class="search__food" id="enter_breakfast">
                     </div>
                     <div class="left__container__food__box" id="breakfast_box">
                         <table id="breakfast_table" style="display: none;"></table>
@@ -106,7 +106,7 @@
                     </div>
                     <div class="left__container__mealType">
                         <h5>Lunch: 0</h5>
-                        <input type="text" placeholder="Q Search & add food" class="search__food" id="enter_lunch">
+                        <input type="text" placeholder=" Search & add food" class="search__food" id="enter_lunch">
                     </div>
                     <div class="left__container__food__box">
                         <table id="lunch_table" style="display: none;"></table>
@@ -114,7 +114,7 @@
                     </div>
                     <div class="left__container__mealType">
                         <h5>Dinner: 0</h5>
-                        <input type="text" placeholder="Q Search & add food" class="search__food" id="enter_dinner">
+                        <input type="text" placeholder="Search & add food" class="search__food" id="enter_dinner">
                     </div>
                     <div class="left__container__food__box">
                         <table id="dinner_table" style="display: none;"></table>
@@ -122,7 +122,7 @@
                     </div>
                     <div class="left__container__mealType">
                         <h5>Exercise: 0</h5>
-                        <input type="text" placeholder="Q Search & add exercise" class="search__food" id="enter_exercise">
+                        <input type="text" placeholder="Search & add exercise" class="search__food" id="enter_exercise">
                     </div>
                     <div class="left__container__food__box">
                         <table id="exercise_table" style="display: none;"></table>
@@ -171,24 +171,32 @@
                 </div>
                 <div class="right__data">
                     <div class="right__data__days">
-                        <a href="">Activities</a>
-                        <a href="">Friends</a>
-                        <a href="">Challenges</a>
-                        <a href="">Groups</a>
+                        <a href="" id="activities">Activities</a>
+                        <a href="" id="friends">Friends</a>
+                        <a href="" id="challenges">Challenges</a>
+                        <a href="" id="groups">Groups</a>
                     </div>
-                    <div class="right__data__result activities">
-                        <div class="right__data__activities">
+                 
+                    <div class="comment__box" id="comment__box">
+                        <div class="comment__box__textarea">
                             <p>Write a comment</p>
-                            <input type="text">
+                            <textarea name="comment" id="textarea" cols="30" rows="4"></textarea>
+                            <button id="share">Share</button>
+                            <div class="table__comment" id="taskList">
+                            </div>
                         </div>
                     </div>
-                    <div class="right__data__activities__comment">
-                        <p>I earned the Welcome Aboard badge!</p>
-                        <p>9 hours ago</p>
-                        <div>
-                        <div class="line"></div>
-                        <a id="showMore" href="">Show More</a>
+        
+                    <div class="right__friends" id="right__friends" style="display: none;">
+                        <h5>You currently have no friends on LoseIt.com</h5>
+                        <p>Did you know that 92% of users with 3 or more friends lose weight with lose it! ?</p>
+                        <div class="addFriend">
+                            <img src="https://www.flaticon.com/svg/static/icons/svg/2583/2583138.svg" alt="addFriend icon">
+                            <a href="https://www.facebook.com/">Add Friend</a>
+                        </div>
                     </div>
+                    <div class="challenges" id="addChallenges" style="display: none;">You are not currently participating in any challenges.</div>
+                    <div class="challenges" id="addGroups" style="display: none;">You are not currently in any groups.</div>
                 </div>
             </div>
         </div>
