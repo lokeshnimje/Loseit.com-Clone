@@ -39,8 +39,8 @@ nav {
 }
 #logo {
     position: absolute;
-    left: 230px;
-    top: -7px;
+    left: 50px;
+    top: 4px;
     width: 5%;
 }
 .link {
@@ -121,7 +121,7 @@ nav {
   .dropdown__food > p:hover {
       font-weight: bold;
   }
-  .foodType:hover .dropdown__food {
+  .foodType .dropdown__food {
     display: block;
   }
 
@@ -184,6 +184,7 @@ nav {
     height: 70px;
     background-color: white;
     padding: 10px; 
+    overflow: auto;
 }
 .left__container__food__box > p{
     color: rgb(175, 174, 174);
@@ -460,4 +461,121 @@ nav {
     color: #aaacad;
     text-align: center;
     margin-bottom: 10px;
+}
+.pop_up{
+    display: none;
+    background-color: #e2e6e9;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    z-index: 10;
+    background-origin: 1px solid black;
+}
+.close {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    cursor: pointer;
+    font-size: 25px;
+    transform: rotate(45deg);
+}
+
+.break_flex{
+    display: flex;
+    width: 80%;
+}
+.pop_up table{
+    margin-top: 33px;
+    padding: 5%;
+    border-collapse: collapse;
+    overflow: scroll;
+}
+.pop_up table tr th,.pop_up table tr td{
+    padding: 10px 25px;
+}
+.table_row{
+    font-size: 12px;
+    align-items: center;
+}
+.table_row span{
+    margin-left: 8px;
+}
+.table_row:hover{
+    border: 2px solid grey;
+    border-radius: 5%;
+    background-color: rgb(243, 243, 243);
+}
+.dropdown_button{
+    font-size: 12px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 2px;
+}
+.dropdown_button:hover{
+    background: linear-gradient(to right,#114d82,#2971b1, #1A76C0, #1A76C0, #2971b1,#114D82);
+    color: white;
+}
+.dropdown_button img{
+    width: 20%;
+    margin-right: 4px;
+    margin-left: 5px;
+}
+.menu,.exercise_menu{
+    width: 100%;
+    margin-top: 20px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: #e2e6e9;
+    border-bottom: 1px solid grey;
+}
+.menu div,.exercise_menu{
+    cursor: pointer;
+}
+.food_search{
+    display: flex;
+    margin: 15px;
+}
+.food_search input{
+    margin-left: 200px;
+    padding: 4px;
+    border-radius: 4px;
+    border: .5px solid grey;
+}
+.search_input{
+    position: absolute;
+    left: 385px;
+    top: 108px;
+    cursor: pointer;
+    color: grey;
+}
+.find_all{
+    background: linear-gradient(to right,#114d82,#2971b1, #1A76C0, #1A76C0, #2971b1,#114D82);
+    color: white;
+    font-size: 13px;
+    padding: 3px;
+    margin-left: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main_table{
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+}
+.close_btn{
+    border:none;
+    background-color: transparent;
+}
+.close_btn:hover{
+    color: red;
+}
+.input_content td{
+    padding: 2px 36px;
+}
+.input_content:hover{
+    background-color: white;
 }

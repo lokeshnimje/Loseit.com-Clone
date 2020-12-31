@@ -1,0 +1,449 @@
+* body {
+    font-family: Avenir, "Helvetica Neue", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover {
+    color: #ff9400;;
+}
+.firstbox {
+    height: 85px;
+    width: 85%;
+    margin: 15px auto;
+    /* border: solid black; */
+    display: flex;
+}
+.img1 {
+    width: 17%;
+    cursor: pointer;
+    display: flex;
+}
+.btn1 {
+    width: 120px;
+    height: 40px;
+    letter-spacing: 1px;
+    background-color: #ff9400;
+    font-size: 1em;
+    color: white;
+    border: 0.01px white;
+    border-radius: 4px;
+    margin-left: 830px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.secoundbox {
+    margin: 20px auto;
+    width: 100%;
+    height: 750px;
+    border: solid black;
+    display: flex;
+
+}
+.img2 {
+    width: 40%;
+    height: 570px;
+    margin-left: 300px;
+    margin-top: 50px;
+    
+}
+.sidebox0 {
+    width: 500px;
+    height: 400px;
+    /* border: solid black; */
+    margin-top: 60px;
+    margin-right: 300px;
+   
+}
+.top, .loss {
+    color: #455555;
+    font-size: 45px;
+    font-weight: 900;
+    margin: 3px;
+    line-height: 50px;
+}
+.track {
+    color: #455555;
+    font-size: 20px;
+}
+.btn2 {
+    width: 185px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #183962;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 17px;
+}
+.row {
+    height: 50px;
+    width: 500px;
+    display: flex;
+    margin-top: 60px;
+}
+.apple {
+    width: 30px;
+    float: left;
+}
+.star {
+    font-size: 30px;
+    float: left;
+    color: rgb(253, 253, 18);
+    margin-top: -3px;
+}
+.thirdbox {
+    margin: 30px auto;
+    width: 80%;
+    height: 380px;
+    /* border: solid black; */
+}
+.weight1 {
+    text-align: center;
+    margin: 20px auto;
+    color: #183962;
+    font-size: 2em;
+    font-weight: lighter;
+}
+.setgoal {
+    margin: 10px;
+    width: 30%;
+    height: 250px;
+    /* border: solid black; */
+    float: left;
+}
+.flag {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ff9400;
+    font-weight: 500;
+}
+.flagimg {
+    width: 40%;
+    margin-left: 90px;
+    margin-top: -15px;
+}
+.flagtext {
+    font-size: 1.1em;
+    text-align: center;
+    color: #808284;
+}
+.fourthbox {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    background-color: #f1f1f1;
+}
+.myslides {
+    width: 80%;
+    height: 300px;
+    margin-left: 130px;
+    margin-top: 40px;
+    display: none;
+} 
+.s1 {
+    width: 45%;
+    height: 230px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    float: left;
+}
+.water {
+    width: 25%; 
+    margin-left: 38%;
+}
+.water1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 5px;color: #183962;
+}
+.water2 {
+    text-align: center;
+    color: #808284;
+    font-size: 14px;
+    line-height: 25px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.activedot {
+    background-color:  #717171;
+    
+}
+.fifthbox {
+    margin: 30px auto;
+    width: 80%;
+    height: 700px;
+}
+.coneimg {
+    width: 20%;
+    margin-left: 38%;
+    margin-top: 20px;
+}
+.number {
+    color: #ff9400;
+    font-size: 6.5em;
+    margin: 10px auto;
+    margin-left: 20%;
+}
+.pound {
+    color: #455555;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: .4ems;
+}
+.line1 {
+    border: 5px solid #ff9400;
+    width: 50px;
+}
+.imgbox {
+    width: 90%;
+    height: 200px;
+    /* border: solid black; */
+    margin: 5px auto;
+}
+.aso {
+    text-align: center;
+    margin: 45px;
+    color: #183962;
+    font-size: 1.5em;
+}
+.peoplebox {
+    width: 20%;
+    height: 60px;
+    float: left;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+.today {
+    width: 100%
+    
+}
+.sixthbox {
+    margin-top: 50px;
+    width: 100%;
+    height: 580px;
+    color: #f1f1f1;
+    background-color: #183962;
+}
+.advice {
+    text-align: center;
+    line-height: 120px;
+    font-weight: 400;
+    font-size: 2em;
+}
+.personbox {
+    width: 90%;
+    height: 400px;
+    margin: -60px auto;
+    display: flex;
+}
+.womenbox {
+    width: 38%;
+    height: 350px;
+    margin-left: 70px;
+}
+.womenimg {
+    width: 50%;
+    margin-left: 100px;
+}
+.bite {
+    text-align: center;
+    margin: 10px auto;
+    color: #ffa600;
+    font-size: 1.1em;
+    line-height: 25px;
+}
+.carla {
+    text-align: center;
+    margin: 10px auto;
+}
+.menbox {
+    width: 38%;
+    height: 350px;
+    margin-left: 110px;
+}
+.menimg {
+    width: 50%;
+    margin-left: 100px;
+}
+.sharebtn {
+    margin-left: 40%;
+    margin-top: 40px;
+    width: 220px;
+    height: 45px;
+    border-radius: 7px;
+    border: none;
+    font-size: 1em;
+    background-color: #ff9400;
+    color: white;
+    cursor: pointer;
+}
+.balanced {
+    text-align: center;
+    color: #183962;
+    font-size: 2em;
+    line-height: 80px;
+}
+.motivated{
+    text-align: center;
+    color: #808284;
+    font-size: 20px;
+    margin-top: -35px;
+}
+.approach {
+    width: 75%;
+    height: 270px;
+    /* border: solid black; */
+    margin: 30px auto;
+}
+/* .left {
+    color: #ffa600;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top:100px;
+    float: left;
+} */
+.slideimg {
+    width: 90%;
+    height: 230px;
+    /* border: solid black; */
+    margin: 30px;
+    display: flex;
+}
+.slide1 {
+    width: 30%;
+    height: 200px;
+    margin: 20px;
+    /* border: solid black; */
+}
+.food1 {
+    width: 100%;
+}
+.weightlossbtn{
+    margin-left: 43.5%;
+    color: #fff;
+    background-color: #183962;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px; 
+}
+.lastbox {
+    margin: 30px 0px;
+    width: 100%;
+    height: 250px;
+    background-color: #f1f1f1;
+    background-image: url(https://assets.loseit.com/website/home/Pattern_50opacity_Long.svg);
+}
+.getstart{
+    text-align: center;
+    line-height: 130px;
+    color: #ff9400;
+    font-size: 1.5em;
+}
+.download1{
+    width: 18%;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-top: -70px;
+    float: left;
+}
+.download2 {
+    width: 18%;
+    cursor: pointer;
+    margin-top: -70px;   
+}
+.footer {
+    height: 600px;
+    width: 100%;
+    background-color: #183962;
+    margin-top: -30px;
+}
+.footimg {
+    width: 8%;
+    margin-left: 200px;
+    margin-top: 90px;
+}
+.box2 {
+    float: left;
+    margin-left: 500px;
+    margin-top: -30px;
+    color: rgb(253, 246, 218);
+    font-size: 20px;
+}
+.box211 {
+    float: left;
+    margin-left: 50px;
+    margin-top: -30px;
+    color: rgb(253, 246, 218);
+    font-size: 20px;
+}
+
+.box212 {
+    float: left;
+    margin-left: 60px;
+    margin-top: -30px;
+    color: rgb(253, 246, 218);
+    font-size: 20px;
+}
+.social {
+    margin: 180px auto;
+    width: 50%;
+    height: 150px;
+    /* border: solid black; */
+}
+.socialimg {
+    margin: 5px auto;
+    width: 50%;
+    height: 50px;
+    /* border: solid black; */
+    display: flex
+}
+.fb {
+    width: 13%;
+    cursor: pointer;
+}
+.twiter {
+    width: 20%;
+    cursor: pointer;
+    margin-left: 8%;
+}
+.linkdin {
+    width: 15%;
+    cursor: pointer;
+    margin-left: 10%;
+}
+.print {
+    width: 15%;
+    cursor: pointer;
+    margin-left: 14%;
+}
+.copy {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.privacy {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: -5px;
+    cursor: pointer;
+}
