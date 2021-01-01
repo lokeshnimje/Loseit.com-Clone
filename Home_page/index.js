@@ -1,11 +1,4 @@
-
-// let inputBox = document.getElementById("input__comment__box")
-// inputBox.addEventListener('click',commentbox);
-
-// function commentbox(){
-//     right__data__activities.style.display = "none"
-//     comment__box.style.display = "block"   
-// }
+// comment box of right bottom part of home page
 let activities = document.getElementById("activities");
 let friends = document.getElementById("friends")
 let challenges = document.getElementById("challenges");
@@ -104,6 +97,34 @@ function deletItem(index){
     taskObj.splice(index, 1);
     localStorage.setItem("localtask", JSON.stringify(taskObj));
     showTask();
+}
+
+// right day-week-nutrient result box;
+
+let day = document.getElementById("my__day");
+let week = document.getElementById("my__week");
+let nutrient = document.getElementById("my__nutrients");
+
+nutrient.addEventListener('click', nutrientdiv)
+function nutrientdiv(e){
+    e.preventDefault()
+    my__day.style.color = "#51AADE"
+    my__week.style.color = "#51AADE"
+    my__nutrients.style.color = "#2C479B"
+    right__data__result.style.display = "none" 
+    nutrients.style.display = "block"
+    right__data__week.style.display = "none"
+}
+
+week.addEventListener('click', weekdiv)
+function weekdiv(e){
+    e.preventDefault()
+    my__day.style.color = "#51AADE"
+    my__week.style.color = "#2C479B"
+    my__nutrients.style.color = "#51AADE"
+    right__data__result.style.display = "none" 
+    nutrients.style.display = "none"
+    right__data__week.style.display = "block"
 }
 
 document.getElementById("foodType").addEventListener("click", function(){
