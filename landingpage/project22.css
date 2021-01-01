@@ -4,16 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.back > img {
+    width: 100%;
+}
 a {
     text-decoration: none;
     color: whitesmoke;
 }
 .firstbox {
     height: 85px;
-    width: 85%;
+    width: 100%;
     margin: 15px auto;
     /* border: solid black; */
     display: flex;
+    justify-content: space-around;
 }
 .img1 {
     width: 17%;
@@ -21,7 +26,7 @@ a {
     display: flex;
 }
 .btn1 {
-    padding: 12px 20px;
+    padding: 10px 35px;
     height: 20px;
     letter-spacing: 1px;
     background-color: #ff9400;
@@ -38,30 +43,31 @@ a {
     color: white !important;
 }
 .secoundbox {
-    margin: 20px auto;
+    margin-top: -600px;
     width: 100%;
-    height: 750px;
+    padding-bottom: 80px;
+    height: fit-content;
     display: flex;
+    justify-content: center;
+    z-index: -10;
 
 }
 .img2 {
-    width: 40%;
-    height: 500px;
-    margin-left: 250px;
-    margin-top: 50px;
+    width: 15%;
+    padding: 40px;
     
 }
 .sidebox0 {
     width: 500px;
     height: 400px;
-    /* border: solid black; */
-    margin-top: 60px;
-    margin-right: 200px;
-   
+    padding: 40px; 
+}
+.mobile {
+    width: fit-content;
 }
 .top, .loss {
     color: #455555;
-    font-size: 45px;
+    font-size: 48px;
     font-weight: 900;
     margin: 3px;
     line-height: 50px;
@@ -69,16 +75,16 @@ a {
 .track {
     color: #455555;
     font-size: 20px;
+    margin-bottom: 50px;
 }
 .btn2 {
-    padding: 12px;
+    padding: 15px 30px;
     border-radius: 5px;
     background-color: #183962;
     color: white;
     border: none;
     font-size: 15px;
     cursor: pointer;
-    margin-top: 17px;
 }
 .row {
     height: 50px;
@@ -89,12 +95,17 @@ a {
 .apple {
     width: 30px;
     float: left;
+    padding: 0px 5px 0px 0px;
 }
 .star {
-    font-size: 30px;
-    float: left;
-    color: rgb(253, 253, 18);
-    margin-top: -3px;
+    display: flex;
+}
+.star > img {
+    padding-top: 5px;
+    width: 22px;
+}
+.col-md-4 {
+    padding:0px 5px 0px 20px;
 }
 .thirdbox {
     margin: 30px auto;
@@ -141,17 +152,17 @@ a {
 .myslides {
     width: 80%;
     height: 300px;
-    margin-left: 130px;
-    margin-top: 40px;
     display: none;
+    padding: 20px;
 } 
 .s1 {
     width: 45%;
     height: 230px;
-    margin: 20px;
     background-color: #fff;
     border-radius: 10px;
     float: left;
+    margin: 20px;
+    padding: 10px 5px;
 }
 .water {
     width: 25%; 
@@ -168,11 +179,15 @@ a {
     font-size: 14px;
     line-height: 25px;
 }
+.slides{
+    display: flex;
+    justify-content: space-around
+}
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 0px 5px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -184,19 +199,22 @@ a {
 }
 .fifthbox {
     margin: 30px auto;
-    width: 80%;
+    width: 100%;
     height: 700px;
 }
-.coneimg {
-    width: 20%;
-    margin-left: 38%;
-    margin-top: 20px;
+.fifth > img {
+    width: 12%;
+    display: block;
+    margin: 50px auto;
+}
+.center {
+    text-align: center;
 }
 .number {
     color: #ff9400;
-    font-size: 6.5em;
+    font-size: 6em;
+    display: block;
     margin: 10px auto;
-    margin-left: 20%;
 }
 .pound {
     color: #455555;
@@ -209,10 +227,12 @@ a {
     width: 50px;
 }
 .imgbox {
-    width: 90%;
-    height: 200px;
+    /* width: 90%; */
+    /* height: 200px; */
     /* border: solid black; */
     margin: 5px auto;
+    display: flex;
+    justify-content: center;
 }
 .aso {
     text-align: center;
@@ -221,34 +241,32 @@ a {
     font-size: 1.5em;
 }
 .peoplebox {
-    width: 20%;
+    width: 15%;
     height: 60px;
     float: left;
     margin-left: 30px;
     margin-top: -20px;
 }
 .today {
-    width: 100%
+    width: 80%
     
 }
 .sixthbox {
     margin-top: 50px;
     width: 100%;
-    height: 580px;
+    height: 600px;
     color: #f1f1f1;
     background-color: #183962;
 }
 .advice {
     text-align: center;
-    line-height: 120px;
-    font-weight: 400;
-    font-size: 2em;
+    padding:30px;
 }
 .personbox {
     width: 90%;
-    height: 400px;
-    margin: -60px auto;
+    height: 350px;
     display: flex;
+    justify-content: center;
 }
 .womenbox {
     width: 38%;
@@ -363,14 +381,16 @@ a {
     margin-left: 30%;
     margin-top: -70px;
     float: left;
+    cursor: pointer;
 }
 .download2 {
+    cursor: pointer;
     width: 18%;
     cursor: pointer;
     margin-top: -70px;   
 }
 .footer {
-    height: 600px;
+    height: 500px;
     width: 100%;
     background-color: #183962;
     margin-top: -30px;
@@ -380,19 +400,32 @@ a {
     margin-left: 200px;
     margin-top: 90px;
 }
+
 .box2 {
     float: left;
-    margin-left: 500px;
+    margin-left: 550px;
     margin-top: -30px;
     color: rgb(253, 246, 218);
-    font-size: 20px;
+    font-size: 18px;
+}
+.box21, .box22, .box23{
+    margin: 5px 0px;
+    font-size: 15px;
+}
+.box21:hover{
+    text-decoration: underline;
+}
+.box22:hover{
+    text-decoration: underline;
+}
+.box23:hover{
+    text-decoration: underline;
 }
 .box211 {
     float: left;
     margin-left: 50px;
     margin-top: -30px;
     color: rgb(253, 246, 218);
-    font-size: 20px;
 }
 
 .box212 {
@@ -400,7 +433,6 @@ a {
     margin-left: 60px;
     margin-top: -30px;
     color: rgb(253, 246, 218);
-    font-size: 20px;
 }
 .social {
     margin: 180px auto;
