@@ -193,10 +193,8 @@ nav {
     font-weight: bold;
 }
 .right {
-    width: 22%;
-    /* height: fit-content; */
-    /* border: 1px solid blue; */
-    margin: 40px;
+    width: 300px;
+    margin-left: 40px;
 }
 .right__data {
     width: 100%;
@@ -330,10 +328,10 @@ nav {
 }
 .comment__box {
     display: block;
-    width: 100%;
-    height: 400px;
-    padding: 0px 15px;
-    background-color:#F7F8F9 ;
+    width: 100%;    
+    max-height: 200px;
+    background-color:#F7F8F9;
+    overflow: auto;
     /* display: flex; */
 }
 .comment__box__textarea > p{
@@ -353,13 +351,15 @@ nav {
 }
 .commentList {
     border: 1px solid rgb(204, 203, 203);
-    border-radius: 10px;
+    border-radius: 4px;
     max-width: 300px;
     height: 30px;
-    margin: 10px;
     padding: 5px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.commentlist img{
+    float: left;
 }
 .row {
     font-size: 10px;
@@ -381,8 +381,10 @@ nav {
     color: rgb(202, 36, 36);
 }
 #profileImg {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
 }
 .right__data__activities__comment {
     background-color: white;   
@@ -426,12 +428,27 @@ nav {
     font-size: 12px;
     text-decoration: none;
 }
+.row__comment{
+    float: left;
+}
 .challenges {
     width: 100%;
     height: fit-content;
     padding: 15px;
     color: grey;
     font-size: 12px;
+}
+#deletComnt {
+    background-color: #F7F8F9;
+    font-size: 11px;
+    padding: 2px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    color: rgb(202, 36, 36);
+    float: right;
+    padding: 5px;
+    font-size: 15px;
 }
 .footer {
     clear: both;
@@ -578,4 +595,16 @@ nav {
 }
 .input_content:hover{
     background-color: white;
+}
+textarea{
+    width: 296px;
+    padding: 0;
+    margin: 1px;
+    height: 25px;
+}
+textarea:hover{
+    height: 50px;
+}
+.share{
+    display: none;
 }
