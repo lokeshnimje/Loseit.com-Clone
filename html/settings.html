@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lose it! - My Foods
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/settings.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav__menu">
+                <a id="selected" href="../Home_page/index.html">Home</a>
+                <a href="">Goals</a>
+                <a href="../Community_page/community.html">Community</a>
+                <a href="">Challenges</a>
+                <a href="">Insights</a>
+                <a href="">Forums</a>
+                <a href="">Apps & Devices</a>
+                <a href="">Messages</a>
+                <a href="./settings.html">Settings</a>
+            </div>
+            <div class="nav__menu link">
+                <a href="">Lokesh</a>
+                <a href="">|</a>
+                <a href="">Upgrade</a>
+                <a href="">|</a>
+                <a href="">Sign out</a>
+                <img src="https://st.depositphotos.com/1779253/5140/v/600/depositphotos_51405259-stock-illustration-male-avatar-profile-picture-use.jpg" alt="profile">
+            </div>
+        </nav>
+        <div class="main">
+            <div class="manage_links">
+                <div class="manage">
+                    <p>Manage</p>
+                    <div id="my_foods_btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAACNElEQVR42t2Uz2sTURDHi4hJsAnNFrvYpL14E48e/PGPeNM/wKMH8VIQiUiltR7tSfSiBQ9CW6oETMD6IxvFTaKXNtnGNNBQMd0824TdZJw3+7rZhGx2LeLBBx/mO/PezHffC2Rk5P9cM89PBOeTdwJzyQoCR0APziXv8jmuHvzAlZcqPFTK8CRX/WMWP1eA95OR28IvqSXWS7CQKcMDZEE55DvVulrANa9lyvZ+4l2J36g2zARupja7pB0xPSBPbQiEFvt8zlCTv8VQk438CpS+vSbKLx7Z2i+839Nkt/oF2M8ioaeWbe0X3u9pouSLUNjcJdTl97YuFPuiC0qu6G3C6hqAoQOYOhiZtxQJUevBcCBy3u/DZAsbGghDk3VsbIi8Yde79Ncb1O/9XIUtfJI6FEp1UFc+WtpJyUWLXMn7MGF72wDtA2QfDOUDRTD3RU1gHgyuY43tVfyYVPFwk7BMWlbeadr1HjotC8pb1O/9XF+3oaAxvDoDdTVLkdAcUfslIuvdR3i/m8kxWZZP0k30HfwyAzHxJlmKVu7E7NOmrZleI5NIJC7h3OM0PR6PhyRpckqSYhcCs2t1bQd/E+BNbTCyaAJt0j0MqhEm8P7AvVU2Nh67GpZiF0dleYJMotHT0xE0Cd1YXLqdUqGqM2HyCQd2PBALz+vNJiTSOQhdn38zdmrqWnhi8hKZOJ8revbydHDm2ePg7NqPI/0x3n/VDNx6ujR65vy5cDg2bj/Xv1i/ATotaRmB12OxAAAAAElFTkSuQmCC" alt="My Foods">My Foods</div>
+                    <div id="My_custom_foods"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA5VJREFUeNq8VV2IU0cU/mbuTTYbNybuJlk1BpUFof48iPSHIqUgxVIs+NBS+iL+PPepf9oHZUEQ+tqKlNJC++pLi0/Sty5t6Wotyrb1B3eXqvsXk/25+b33zoxnZu5Gd7sJWNBJTmbu3DPfOec750yYUgrPenA8h+E++XDxIye+LYfTtDxKUvgfeB7JeZIzL34q/DWN0BhOb3/jZHJwH5ye9FNbUKKVqk79dnJx/LJ+PNWJrhOJ7C4wxiF9b01RMsDAzveQ3XMEjLsr35HziYEXMFnCiY500chBCgjfW7nLWHvZ07sBsdQWhLVZyMCDCKpRGGolTkcjpCf8pSfR2/jMiSG97U30FV6lPQfN8i343n17aNmAXkJ1TzxhQrSWIudZFAEnWoD+oXeR2XG4rdpX3I/67FWSaxZYKjuv0RL/KeFG+R9LwzLPoQc3nkIiuxP16d8jEAuUHnoLTARQWo9o0/rNyk3rYDcjzfk7aMyNIag9MAdVUEPv4F60yHh9ZtREJynBpSufE2gN+Zc/QTxVQFifIp2/4C+Ma5K7G9GvRauMYH6cDtxB4P0L1ZqHP38bbk/GUi99NIiqmZGPSXcB/buPwV+cNGvDMuedc6LDNMK5VRQtYidA5cZXcBNpbDn4vaHKcdchmduDytg3mLp8BE5yE7hjgSXRudoIXx0HpyzrPjEzKXPHpd0Aqa0HkcjvRemXz9AsXUNm13HEkwPmvWjMkr4LbvR595wsVxSLDDBu1z3p7ci+dArViUuo3b2IhetfILZ+K5Kb91NpO5EzUfQGspsRFdEFO+toYn2bsPH1LxFWp1C5MmxA/blRNKd/RbLwGuk4FIFjHTNUW8c608URRQKrSLL5wAXq8CJKP39AleYZQE1LbeJHom8f3GQ+OhMxYGRVn2RyRWzIFTnJusddi3bfNub+QKvyN0SzEtFgC8MvX6eE5zF44GskMjtWVKcehNtP4mbyRbi02UuAWZoLoWSLxFn68R2h8HD0nKkk3c3M7En9hajPoDr+A/XKEsJGqX0v6Y8fsBo9vE1ym3Dvuu100M+9h85PMVe+M7RRGSDFzP1N99SYqSJNldQsknElQsrRWUgpqTlD8keay2BiJsTNaecqs5jGL5ekQVD3abP87Ujqw/df8epCiUNxF/2OowhcErgknkNbziZhsE6AgIWA/gvXhoJQtP6cxKXvRnqHCXOa1BYJP2TP4z/+kQADAC0dmqDjzBgHAAAAAElFTkSuQmCC" alt="Custom Foods">Custom Foods</div>
+                    <div id="my_exercise" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA5VJREFUeNq8VV2IU0cU/mbuTTYbNybuJlk1BpUFof48iPSHIqUgxVIs+NBS+iL+PPepf9oHZUEQ+tqKlNJC++pLi0/Sty5t6Wotyrb1B3eXqvsXk/25+b33zoxnZu5Gd7sJWNBJTmbu3DPfOec750yYUgrPenA8h+E++XDxIye+LYfTtDxKUvgfeB7JeZIzL34q/DWN0BhOb3/jZHJwH5ye9FNbUKKVqk79dnJx/LJ+PNWJrhOJ7C4wxiF9b01RMsDAzveQ3XMEjLsr35HziYEXMFnCiY500chBCgjfW7nLWHvZ07sBsdQWhLVZyMCDCKpRGGolTkcjpCf8pSfR2/jMiSG97U30FV6lPQfN8i343n17aNmAXkJ1TzxhQrSWIudZFAEnWoD+oXeR2XG4rdpX3I/67FWSaxZYKjuv0RL/KeFG+R9LwzLPoQc3nkIiuxP16d8jEAuUHnoLTARQWo9o0/rNyk3rYDcjzfk7aMyNIag9MAdVUEPv4F60yHh9ZtREJynBpSufE2gN+Zc/QTxVQFifIp2/4C+Ma5K7G9GvRauMYH6cDtxB4P0L1ZqHP38bbk/GUi99NIiqmZGPSXcB/buPwV+cNGvDMuedc6LDNMK5VRQtYidA5cZXcBNpbDn4vaHKcdchmduDytg3mLp8BE5yE7hjgSXRudoIXx0HpyzrPjEzKXPHpd0Aqa0HkcjvRemXz9AsXUNm13HEkwPmvWjMkr4LbvR595wsVxSLDDBu1z3p7ci+dArViUuo3b2IhetfILZ+K5Kb91NpO5EzUfQGspsRFdEFO+toYn2bsPH1LxFWp1C5MmxA/blRNKd/RbLwGuk4FIFjHTNUW8c608URRQKrSLL5wAXq8CJKP39AleYZQE1LbeJHom8f3GQ+OhMxYGRVn2RyRWzIFTnJusddi3bfNub+QKvyN0SzEtFgC8MvX6eE5zF44GskMjtWVKcehNtP4mbyRbi02UuAWZoLoWSLxFn68R2h8HD0nKkk3c3M7En9hajPoDr+A/XKEsJGqX0v6Y8fsBo9vE1ym3Dvuu100M+9h85PMVe+M7RRGSDFzP1N99SYqSJNldQsknElQsrRWUgpqTlD8keay2BiJsTNaecqs5jGL5ekQVD3abP87Ujqw/df8epCiUNxF/2OowhcErgknkNbziZhsE6AgIWA/gvXhoJQtP6cxKXvRnqHCXOa1BYJP2TP4z/+kQADAC0dmqDjzBgHAAAAAElFTkSuQmCC" alt="My Exercises">My Exercises</div>
+                    <div id="My_custom_exercise"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA6ZJREFUeNq8Vc1rVFcU/9333nw8TSaZfKAQUyEYWxJcqNQudOdW8Q8QQXBb6KIULIWK626KEuiiq3YnIogIorQUsYUSCcSvhR8Rk7Fpg9OZcTJvvt69t79z34wmppOFYF44vLn3nXvO+f3O79woay0+9ONhC55g7WLq59k0X9/STtPG3iNelTZDO/fo1Ket/03C5/yRPeNnpwcz6EutB6m6P9awa9X6wy1t++dLjbO3nyzJ8utedJ3Zk0tD8XCtbRDR6jGt81tsaiCNkxM5HBzOum/dffFvs78T/WkXpyddfEY1HaN2Urlai6DrkA2Q8RX6Ao/J7RtgXVQm2RntncQAUcsQiYKykkBBWJvMZZBLKaQZfCjj4zV9ri/WoDUpYlFG4vKAcWxaF6dnEqEpiu06FGOhjxO7t6PFSGGgENCpSmoOjGTwMam7UajhQanl6jcuhXUF9pSwR8zPq3GnF9b1IiQtNXJ/8V4ZfyzXnV8/4R3ZGeJVU2OhErvCIukPTc57ahMk8rGwGqNGOvIpH7m0h919KTS1xUvuj2QT9wbXs/80cOnZqqNL/oTCUlujzMI8pXon8eUjoVabFo1WjFLdw52XdcwxoCT7JO+Ugyek58cHFUehJKwbMYO4W6zebOJ1ksj3XB8Rk4Y/lxu4vVjH+PbgDQ372I+vDuRxeEcWPtdt10dFuiWgcsLp3XhBI44dZ985UFGhh0M7s5Br7trTGorsxWdcf74/j4iF/VKIIBIzjo2Nsn+nJ6qjqiSBz/eubT6+OJjHxEAKM3MV/Pai7pJlCXdiMIW/2CuP0T0vKc7ajRO+AYlAlUOiquOU7smpnKPpwt0yfl9qEqmC9P/oRyHmV5pYKLbduS56oyThZnQJl4QtKjp3aBjTw2kX6Kf7VSxVtKNSShnh7AQMtH9HBicm+3DlcTUZXqFKoLwzJ8Hg6LhUIgjDvd9ddVWJdCdJxfdzZdxh06U83yR3hzj+varxza9FhBnlFKa8jv5Fzja5RBl3iL9eM2DMGUbIvRG+x6zVFW4OiOZvLkaYpXw5XwjksJTJrlqTBCpS5qZl0dacc0lACUuFjox2s8YEx2mPuXzW7ZG7CRqFhVty0b1qaFycL6MUy71EYxDZ1wyk5e2KTtTEe8Z96wB1Fi08vKu6N5OVIgG5KwrcKa5cnvnS9/0oOzB8LPZTQ555qzLX2DX6N659VkaLJgkNqdPNxr/L11au/HCe28t0qci4qa34H/+fAAMAYnW8JPAvXwcAAAAASUVORK5CYII=" alt="Custom Foods">Custom Exercises</div>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAo1JREFUeNq8VTtoVFEQvXffW8SoIcomFrIgfljBZhEbC1tTiJWNYCEIW6mVIlhY2kUQwSrgB5JGbAQ7ERQLERQ1jR+SQsUohCjZGHGze+c49zd7H7tRI5jHDm/uMHPOfO681QDU/35Kag2ePD2M7qvtKOnSBNd24J8RtZ41yzh2f+r1474klcGBm+y0HwpKR6Ptpjvo5BxaDC1m8QO2MsYN1nb1JcnL6uD23XvUxSvjYhu7cEa9nXqlCKRuXW6I/cTZcU/Gv+uT58R+8vhYxvadhers4KM0DtXx7NFdNOff40dzFksLn/DmxUM0RuvAy2toTdZE7NnaO18m8PNpTcSeLU6KWyA5dbiOxW8fHEEq7db3VYnFSXEL7SpnUFmW98yy3WquavblvLgWOt2TJ3eughw7uQycTgg6OZ2Cv9dJEXkfIlIx1upHT1/SfQdvg6afP3CBLkjepIxhsboxztfr1mbE3vVxJP33xCbpMwsEHGizs8FOJw8iJOSBo90nBfFZgQTi6AOTSqKEShxYJDChmlAF/Z4kAprQZxPAEhBCqMRIGyUpQ5LUiiSxVIR3BIhVxL57XyoQ+bi/IPHtCiWnvU7mISRgm/EJELrgfyYJLTKUDpOSqsiBu3YZ6mlRHD6ouCeloeGq2jxcLbFscBl10DNoDxSvKrwkQ47idiq0kHG3sORDI1WV88asZ94Kv7e560rpTTFJyyDX1rXLzkEuil9YN5f4vVLqCMs7xp3JZfOlXdwQIu0XLbmmbgYeOC4uFQYOWYG2wYL2mNp+pbN1A4Mdjllk49e5j9O3K5vyvfytGeGMyyZcYVdRIIAdPLotRfJ18NXg89wSzs93Nt5rL7dnYLHX4j/+lwADAIPAc3R6HSrZAAAAAElFTkSuQmCC" alt="Recepies">Recepies</div>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAAD10lEQVR42t2Tf0zUZRzHP9yRQYDUlq1GVwm3ZigpHqgUR6LomKdyObhNOKCrHdhkSfNXA01+6Pq7OWu2WGbyw/JqiDG5ODoODu7Ou0PvUsek8oIYipEyPKWG757nuXGL5e1Yf/RHz/bZc8/neT/v1z6f+3yJ/p9LSYtoHbVSOYF2/YvQs8iiFlJQfGhINrUmfZyEIksRdrt2o2qgCgcvHkSNpwb13noc9h7GEe+RYPBcradWaA5cPAC9VQ/ZhzLQK3QyNERP01tNW1HhqEClsxL73PsE6NClQ8KszlMnjHnw3xzO76oHqrHXtRd7XHuQZ8wDldLN0JB3CAWWApRYS6C36bHTsVPAOMjgM8B+y45rd67BesOKY4PHsN+9XxhzDdeW2cqgMWtAO+h2aAjr66auTci35KOwtwi6Ph1qLtVg/P44HraMo0ZhXm4rF1ptrxZbTFtAb4eBrP1urQCpzWrxaBbgm/Kh6XojPhk6jtPXWzB8dxgT0xPQ9QfMNRYNtnVvw/qO9eEhae1pyDJmIaczBw1DDQLgmnCixFaIYvt26J1viP1NRymK+rdD05sPdbcaqi4VNpo2IqM9Izyk2FqMK7ev4Oqdq5j6cwozD2agu6DFDrcOv/qHA1X5f8ZbrmKo+1TY3JOLXPMGZHdmQ2lUIrUtdX6Qvy/LuBm5/VnoHD8/J392zACVbR1yepRQfr8G6caVWHZuKWRnZOEh8afjkd6hwBqTAiu7khHXTnjCSDDeOjcHcmasUeSbR07C/btTtHTEP4KUsynhIRFNhMgvCVHfEOK+DQAWmVmFl1X448G0ANyb8SPPk4lMR/I/Ju7ltnlAJM2EBV8RHmtlVZ0nPNlFeKaXIHMQMn9YjKpfyrDam4AXLkjR8VurMD7uO4pXu1n1nQrENEeHh0gZ5FEDIaaN8Dir4rmeaAz6L+PEzaPIH8rA6z8qUPrTBlgnTQIwen8ECaZYoefvpKdoHpCWgDi2LdAqeV88BqbsD/0YR6Z9eM2VInSxs5DGkJACaWKiIp4qmKhpbiVPdROS7NGoHd4F990+DN7zwOt34qOxD7DC+bS457pgJV8wSBlNCj/mK+z5Qb40NTlxyfLNEVrJpOSz0P/J827C4oHAzs88z++5juv5O8mnLAqkN7if8OWwIOSlFaqotJiOiPfZdH3Opsswd7q4YUI/4Vl7YOdnnuf3XMf1kSfYdFYxYHrc19wvCJltl1y+emHC8iUvPrIq6pRUKxmLfJeV/x57UM1MGHhhLWtLHYv6wM7PPM/vuS6ykkWhZHTBqqgG2TJ5EvcLtuu/WH8Bj2EnuEVslGMAAAAASUVORK5CYII=" alt="Shared items">Shared items</div>
+                </div>
+                <div class="manage">
+                    <p>Preferances</p>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAAEKUlEQVR42t2Ue0xbVRzHe2/vbSljlPaWdjw7KauNPCeiG8aMxGkMiC46hMWAc+ugHSBhyxxhuoePbQJlBboBY9qp4F5lww6Qkgyn2aKSsmgmC4W5LDpZpku08RHjBl/PvX2MZVD/8w9P8s25597fOZ/z/Z6TKxL9P9vuiGi6PqqJalB46QblNOlnaEHKGeqOvHSjwsvX+ETG/p7oF6pe2S+yLNTPyyCTbZuG63DC04ueCSccnrnVM9c7Un9q4jTav7aDwM/OC6EauAuNI614e9CCQLOOtqGZyDpLzaPtpG+HZ+onTF6/KShQY7/YRSBRv4WAKEa3ff4mqj+oxXe/XhUgfZcHsfP8Xuwi2unXrvPvwDHmCgKerSsUvvOqH2nhnXhDQdzmoc2oIZGV2MpQ89ZmAXRs/CSqh2vv0qeXRgXAE1vyUH2mVhA/3vrZDt7J/BBygO4X+4xYO7ARJf3lKB0wwby9QgDZx7pQOmjyy4yJ6z8Li5Z+YhLq+OfxH2+gzFUd2gkPSbPnIM9RiGdOrUFB7xo8/XExNrxuEkC2bzqR7ywWngNRzVaH6whWHMn797ioRgUiWxOhe+9BLP1oBZadeBI5jqfw8mvG4GUILDp+7Qa+8FxC97l+GNtqoNySAHETB/6Kzw9pVLhpixKUVQmxLRoLO7VYdNgAbXcmko9m3+Mg7Tk1uKoERNTEgt0RDaqZAPaR+aEgtIU44YtaOIgPREPcoUbRkBn2b50Y+WEyuLjn+ylsTxahKZ/FK6ukYNrVoNsIxKYiG+RAWUJBmjg3TXbDF4vJxLly5/WClsJwtghXtq2G8xEKVavCwHRqfKBWMn8fFwJiJZAWAiDFb3xpCy7KlEfdBSlazqIjRYThh3ygoSwRKgOO9hM3zcoQZ9LMuXkXDImJv44BgPR4AtgKpTB2XfwKOQXhKDfQPpDfkSOHwvPrFoAmMVMtISDEhZs+QCCdaoiNcojL5JAei0NYT7zvLMhvpOJkHWSnE/EYAVUuoXDwARHO+EHvpop8kbWo7oXk5uYyKSkpSsaqGgtAWPsiSLpjiIu4YEwjVyYRtj8G4QOLEd6nxbLVC7Dx/juOahaLhKhJIn/odOnqrKwsVgDo9VmqJH1mtk6fUcTuVl8WIIcI5DCBdMUSSCx6L5zFXlc7JK+qIOvXQjagFdyE9Sbg0fxwmPSUAGAPaQhEDcYa/XuyPrMiSZ/+uF6fETcLkl4cVa7tYlrVt5iDGjB2DdgPYyA5Ggd2KwfJHjVkzkSf/AA+RunxeLDEMft+DNmc74ZFbEo4pzNkVCYtWbpSgATiMhge5uLTDGmyAs0eukR+jVof+Re1QX6LMstvU5WR01RV5AxVLZ+RGlW3iaal61V/S4yqPyXrOC+7lrvJvKSYEpfIr0oKlT2xy3U596WmaoJx/RftH8B/GPguK664AAAAAElFTkSuQmCC" alt="Application">Application Preferance</div>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAABaElEQVR42u2Rr0vFUBTHn/pQlC0MNt3c3fvlMzgN8opBw2BgeUEEweY/4F9hEWw2gyhosVgsFovFILxgMFgMWiwWi2CQ476y89jmvF6uTTzwYd977j3fL4dVKn+xqglmgvVLzNSrtEx62COwu71BuhqkQaVlvffWCaxEFdLVIN2oPOTtepUAhnQ1kIa8XnUJYIh1FtW+NOTlMiaAIdZZVPvSkOeLRQIYYp1FtS8NeTrvEMAQaxWK76Uhj2czBDDEWgdpyP1pkwBC+MvwnQrfhQwYhjF+d+ISgCnrsvNPwAueuYQwDId9vzF/e2wRgCnrnc0ROthq988qwAueuS3CMDL8eqt7czhGACGs1+JEHzn9swrwgmduG6QGwdRcb79KACGsdYBXcZPPbYQQo7Zte44jpl23Nmt79c6EaCx4Xm1JiHbk+614MmguA2j0cIc3eIsZzMIDXl/+STYsw2CBoQLF++zsf+nXBybTeJDR9rVRAAAAAElFTkSuQmCC" alt="unit">Unit Preferance</div>
+                </div>
+                <div class="manage">
+                    <p>My Settings</p>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACtklEQVR42u2USUwTURzGSSxtZ9pOCwjIookwtHRaSKClUMXYoxoTFyDRhBvqyXjw4smDBy8emnjx7BZktVKWtpRhXwoInVosLXtTUyggRj0Y4uHzTUvCFY5GX/Ilbw7vl998/5eXlvZ//b1reyijNjGssccH1UKcZ/ZjvErY8DL2Va+q9tiwxBDTmBgrjGxPW7Hrr8NusAmJ+ZuITVZjlc+LhF2KxmOZbY4URHbmLmHTdw7RwVyseZRY8WiwzBdidcyEkPtURHDKD033RjN6fgYb8CNYj+9iAvX4RvKVZFeow5bPiviUBeteNQEpseRWYrFPgc+9JO4chAYM8Dsp+wEsaz7m1qxEOpQItSqw0ErjUwsNgWT+HYVgB43ocBHW+jOx5FIi3KdMgoK9NALdNBYmbtwNeFhMO2RCErg7ov615yvHnnAtZUWMRKvtuauI+2oRHdFhmRhFXCqE+mgEe1Igv1OO8Mc7j4O+p7mLs033Jzql+0ngzjCzsDWkAZkevvAMYgMqbHhVpCfVAUhBQMS8R4EAgfm7Kcx1UZhxyDHZKUsajjvUGGpLTxlGx9QZBHYvNsDMiN/r/apkT+I+nOxJtKIQ6MtKgmY/yOFzyDBBYKMdUoy0p2PckQO+VWI/0pTF6Qm9J8OC6wzpicLUexnGO0WQVLTCIOmeb1eHXc2So99H8nuNM13ZkenufIx1UClQmxx8Gw1Pi3TR1Xzi8B7abDYJ18BJrdZCiuM4JctWMyxbkV1cXHVaW2YqZctNlWe5yguPHhQ8fPmccfa8lq33t0h+O1/Jlt++oN48e5LZYDRW5+p051XkvDQt32SiRUhpqSVLV1GRX1JmLiox1uiLjBYzW1Z1sZgzX9bqLddZztKgNZhvlRjMt1mDub5Ib77CGmtsWs5sYbkqg3hOrzfl/YOv0h/8u4b8WdoKJgAAAABJRU5ErkJggg==" alt="upgrade">Upgrade</div>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACtklEQVR42u2USUwTURzGSSxtZ9pOCwjIookwtHRaSKClUMXYoxoTFyDRhBvqyXjw4smDBy8emnjx7BZktVKWtpRhXwoInVosLXtTUyggRj0Y4uHzTUvCFY5GX/Ilbw7vl998/5eXlvZ//b1reyijNjGssccH1UKcZ/ZjvErY8DL2Va+q9tiwxBDTmBgrjGxPW7Hrr8NusAmJ+ZuITVZjlc+LhF2KxmOZbY4URHbmLmHTdw7RwVyseZRY8WiwzBdidcyEkPtURHDKD033RjN6fgYb8CNYj+9iAvX4RvKVZFeow5bPiviUBeteNQEpseRWYrFPgc+9JO4chAYM8Dsp+wEsaz7m1qxEOpQItSqw0ErjUwsNgWT+HYVgB43ocBHW+jOx5FIi3KdMgoK9NALdNBYmbtwNeFhMO2RCErg7ov615yvHnnAtZUWMRKvtuauI+2oRHdFhmRhFXCqE+mgEe1Igv1OO8Mc7j4O+p7mLs033Jzql+0ngzjCzsDWkAZkevvAMYgMqbHhVpCfVAUhBQMS8R4EAgfm7Kcx1UZhxyDHZKUsajjvUGGpLTxlGx9QZBHYvNsDMiN/r/apkT+I+nOxJtKIQ6MtKgmY/yOFzyDBBYKMdUoy0p2PckQO+VWI/0pTF6Qm9J8OC6wzpicLUexnGO0WQVLTCIOmeb1eHXc2So99H8nuNM13ZkenufIx1UClQmxx8Gw1Pi3TR1Xzi8B7abDYJ18BJrdZCiuM4JctWMyxbkV1cXHVaW2YqZctNlWe5yguPHhQ8fPmccfa8lq33t0h+O1/Jlt++oN48e5LZYDRW5+p051XkvDQt32SiRUhpqSVLV1GRX1JmLiox1uiLjBYzW1Z1sZgzX9bqLddZztKgNZhvlRjMt1mDub5Ib77CGmtsWs5sYbkqg3hOrzfl/YOv0h/8u4b8WdoKJgAAAABJRU5ErkJggg==" alt="information">Account Information</div>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUCAYAAACJfM0wAAABzUlEQVR42u2UO08CQRDH0URD7OzkwAM1xigqJnwCOzsfnYmfwEdrZWXlB9HCQgofBIyJDYkVokjsNAgBeZ54HHA57hhvVmcDyiVa2DHJP7O7s//fze3mzmbrxfdwjc3Oj3oWlkc9cyuuCd+qa9y39luZvhX0IuMHGAvhy2vAaLVafxIGepHRFYybCK4bOui6DgZmw2BzQzfY3NCxZjARFL2WYATV63UOb2oaNJsaaG1ZMzOtE1RRaqwJSzAaVVWFVDrD4WpDZWuYGzRWGxyaSqXZGnotwZ8mFarVKiSTLxxeq9U6RND4QwLK5TKQzxJMRkVRIJfLw23snsNlWQa5KnNoNHoHkvTW8UBLMHbartOzEEQiNxxO0FDoCgKBc3h/lzv2W4IrlQqQ6Kafnp7hJHDK5qjDo2NIJB7Ny2uyebvHEixJEqCoQxzn83mIxxNm90G4CIYhZh7P62uOnS29Afm6gfsEj3e9VCpxKI5RxWIRstks6xyVyWTYGtUJjmPzy9uw+f0DnGq3290jzsl9ghYKhT+J4II4feBwTPhFURwm9uCIc2pRcM9su8SZnXaZm3ed7um97+J1t3frS5sOj3dJEIQhk9ff+/v+f3wA9gi+D51xsjoAAAAASUVORK5CYII=" alt="notification">Notification Setting</div>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAADSklEQVR42s2Ve0yNcRzGm0vuhYZWLud002SlSKjOjeSSsqZcT0czGpbbZjsuQ6tRoZxTmayh1ahjbgfrmG66ny7kiNEYJhxJh9JR520e3zdZx8Y6pT+822fvu/eP53k/v+/7/l4zs//50KnmiOvPcVLV0WM2DWhwU5nItq1GFGOoFak77gtqO2tESXXJ1ucVh83MB6SgOV+4vE0tbG2vFYFheUBUESUCMHk8NZTeU/+poFElcPhcKtDra0Qw/Cqha6ZcCKaQD+aOLxjlgqdQhAzud8mne7xbXyuF6DC2qOy2yOWBue0N5uo8GBSes/pV8OEO3+9LmQDf7v/FQkUWN+bDcNkT+kzXVf2bxT1e4R8tio0tvNCe5YGv6TN39v1tyvOd+5uFZjGY6r9ZuEGX5hzVpwJ2iM1F/OK2qh6LzkehZCHssbhFFlfI4pIHWi+4oCnVPqlPJR/zfE+3lP+06FomzVJ0ataAKaOSAtbCB8z1+eyw2Vngc5oTGlOmZJls8O62T5quiI/fLOp3oLN6xU+Lu8YW7mQxA01n7PD2lE1erwV1ihnmb1TLKhvLNqC5RoJWzUa0a4LR8TCALNb1WOT8spiDtgxXmoUTtClT8PqklabXkpJz9pIc+WSkR3shW7YGyrQI3L24G6XKQ3iUH42Gin14pRJDXxACwzXvLouWLgsuGmTWeBFv+d6k5ZJHTo3aGTCe2eZvgb2BFti/cgyOhI5D4hYHKONmo/isDwoyt+NxYSy0pQegU62GNtWBtUD90VGoO2xm2vYSu8XOMnkHVx4tttVJgychLswWObHTu/aqkhQXyMIn4GaUB0rOBuNJjhQN1QloLNqF50kcPDw0qO/fSkwYd25KpOP5LOm072xB9r5pSAizgnK/MyriXfFE7oGXGUugzd2DljoZtKrQj/3evyj4KhvOkiiZ+Cl5s4P6hITbfGwtB8fFXCRI7KE46IZnyoV6Pf0STMkcRAwjRhNWhA3HytxZGmQZIw0aK3PnDuHRPVdiJuFMcNYLJs2j80hTwocQFmwoYd8d4kn4EIuIAILdBNcT4UQEsdUI9i+5hBjRm8FwYjwxmXDsfmIvgk/4E4FECLGOEBMSYkN3uR/hQgw1Dv0Bz+JEsPqVWWEAAAAASUVORK5CYII=" alt="reminders">Reminders</div>
+                </div>
+                <div class="manage">
+                    <p>Profile</p>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAq5JREFUeNq0VEtPFEEQ/ma2gWU1QnisIgRfYIzRiyc94E35B8ab8Qfo0eC/8GLijaMXjSEcJXIxmxAPGDy4CZqNARGFBYKsuzvTD6uqezegY4xGJ6npnprqr756dEXOOfzLJ/pvgOV3a+4XFoCLfgt0buy4GKmWwjqL8+MjsnfwILx6f/wtWvm2rmXjvysf1tvAbUBjrKzPykJLDqc2AmsbJqI9kJAysV6atNdkdf+ihrX2Z0DnjHgU8CA7GxWUF+bRaNSRK/SieGECnQOjSODBEmuEqTUZgJooWP5J7OR/DCy9eILK0ivxw5xre7sYnbwNq7qQkJG2PmRjTRswbufQeoZsZEKevn3dJWNyQ2JIsf56HtXlRaQMRsaG3HPutckA1NoEbz5XlDYU+ofBXWC5ILyS06RZh3ZWHKXsjG11FqBJpZq6lUN6HRk6Q7FGknQW1VtE59GTBOg8ywCojc4O2UmiqbpktEs2g2cvoaunKB3Aki+eQkygzMwwS2k3Zp4BKEUJYPzkKGTdUUC+p1/CY4kP98LGHZJPhmCWTCJNs6qsUwlP5agYzQZqmx+xvDCH6sp7AeOCbSy9pDwUkR8Zhxo8IQWBi4l9mtHYdKhTxajvbaKyWMKbuaeobX3hfpHbx2tjewMrs4+QP3YaA5O3oAaGKaq+9qU4ELIL3f629Jz6bwa1nSrFnYPLKTilZEVY69U1fJp5iK3SrK/+vrY5cPWa2uHB3Zuwd26QA+cTz96tv7vWX/pwp124z+4AQ3Xl6vWY1N1T96aQ6kTaIEJolXD5/ZBwYXD4yiIMjlZ/Ek4fKWuKdMOUniFrg4GwaYEFVj8C8yTaN3H4LD1j9N5WYdJFq6srmJ5+/NeD1UmPkFyeuMaF6SZFDyn6aV+k/aE/wPpMssnDic7XvgswAPDL5dFvy5o6AAAAAElFTkSuQmCC" alt="my_profile">View My Profile</div>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACaElEQVR42uWUS08TURiG+Re69ge4FEEXEjFgogvEiBp14YJETMRKCVSuLQgJQWKBggnKLTViYhBNJMrGWwyhlUp0AQgJCja0lOnQzn3mDK/nTIHSzK5xYeIkT95vznfmOd/MYnJy/s/L2zt84YFv6KHXN/Q4G7p9wz3e3pGSPSGTGQbRTdMk2aBpusKk6QnpKazxYhEY+6aic+Irmsdm0PFZxL1ZoC1kgl2nXH0W+2uGYRgadfRnCAkxyfgy0PN2HmfOX0RBYRHKO5+hLmigKUhgbm9j26TQNKnftDKFput2oa6bZGwJuD85j+KSMuTn5eLczQY4Pgi4+8WAQUjmVMTcqxVVswtl1SCDC0DfnIxLtz3IP5aPq13jqJwBqqYVOoVBIek0DKtWKZKs2IWCrJFHP0C/WwylFQ3IzTuO0pYRlL8X4AiYkDU9Y8LUZKm1pCjbhQlRIbX+jyi+UoEjBaeRe6IIRwvP4uSNRpSNBkAPhCBRZNWqRUmFSGuWfFKyC3lBJluiAiqGlUIq99YElaJY7PZ2k+NFu5Dbkojb/wbhWALXOvxYCXOIJyXrlRbXNnC96ymi8SRWozxankzhVzQOLiEhnpAR4wS7MMYL5GeEQ/XABL6vrMM58BKhpd/Y4AVcbh9FcGEVt/qf0wN5zC2HUTf0GuubCWxuSYjEEpnCbt/gSJQTYBEXEOFEKy1YnQHr7+zd2c9gjkxhPN3Mhv3CQ5UOV727tWuy0d0x5Wpoe1db1/qpurZ5uqqmKXCnun7W4awPsWT3bJ312T62nz3nafe+qnF5nNR1wBJSDv8FmOfgv/9v/QN/GB+1Fl5VYgAAAABJRU5ErkJggg==" alt="edit profile">Edit Profile</div>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAq5JREFUeNq0VEtPFEEQ/ma2gWU1QnisIgRfYIzRiyc94E35B8ab8Qfo0eC/8GLijaMXjSEcJXIxmxAPGDy4CZqNARGFBYKsuzvTD6uqezegY4xGJ6npnprqr756dEXOOfzLJ/pvgOV3a+4XFoCLfgt0buy4GKmWwjqL8+MjsnfwILx6f/wtWvm2rmXjvysf1tvAbUBjrKzPykJLDqc2AmsbJqI9kJAysV6atNdkdf+ihrX2Z0DnjHgU8CA7GxWUF+bRaNSRK/SieGECnQOjSODBEmuEqTUZgJooWP5J7OR/DCy9eILK0ivxw5xre7sYnbwNq7qQkJG2PmRjTRswbufQeoZsZEKevn3dJWNyQ2JIsf56HtXlRaQMRsaG3HPutckA1NoEbz5XlDYU+ofBXWC5ILyS06RZh3ZWHKXsjG11FqBJpZq6lUN6HRk6Q7FGknQW1VtE59GTBOg8ywCojc4O2UmiqbpktEs2g2cvoaunKB3Aki+eQkygzMwwS2k3Zp4BKEUJYPzkKGTdUUC+p1/CY4kP98LGHZJPhmCWTCJNs6qsUwlP5agYzQZqmx+xvDCH6sp7AeOCbSy9pDwUkR8Zhxo8IQWBi4l9mtHYdKhTxajvbaKyWMKbuaeobX3hfpHbx2tjewMrs4+QP3YaA5O3oAaGKaq+9qU4ELIL3f629Jz6bwa1nSrFnYPLKTilZEVY69U1fJp5iK3SrK/+vrY5cPWa2uHB3Zuwd26QA+cTz96tv7vWX/pwp124z+4AQ3Xl6vWY1N1T96aQ6kTaIEJolXD5/ZBwYXD4yiIMjlZ/Ek4fKWuKdMOUniFrg4GwaYEFVj8C8yTaN3H4LD1j9N5WYdJFq6srmJ5+/NeD1UmPkFyeuMaF6SZFDyn6aV+k/aE/wPpMssnDic7XvgswAPDL5dFvy5o6AAAAAElFTkSuQmCC" alt="edit picture">Edit Picture</div>
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABEFJREFUeNqMlF1MHFUUx//zsbvsF1B2WbBCoZYABgGlX0GsSUOjVZ81MVFrje+t1ZfGUEmkjSaNvtQnU7GJHzHGEKMoTSpigwmljWiDkCrLLoV2l+4uLCzL7szcueO5swsB0xjv5D83k3vO755z7rkDy7LwX+PMmXfkkatX4z00438M26i3t7f0fot9Z8/tb2trH+vs7KpqpfndvrP772d3+u2eTX9JRDgwMHAtFov9tJrJ/GxxS3O6XI3BQPC51va2Iy0trT5hIxKZnJxcu3nz9yvJZGpQ07S/IMHl8/kPh6qqu19+8fmDm8BYfNEsL98hR6MRjTHGA8FKV0VFwI5+YknDyetJfNARQHuFC5xbSC0leSKR1GRFkWtr61zp5TRvbqhRNoF/z4S1+vrdTlFNEclGRB/fzuDEHylA44Bu4cNHAzjeWApeXLdFz1w0qu9rb3YJoFpIXJJoY+wdvgOHS8ZdbiJpmBSNBLgkYSA88caNJN4cTSBgSXjAIUPXLPzy6i4BljZqqBZLaaeSkyz8mdcBhwBRxqZVgJkkkZBCdmSTyJtIrDDUexSYXOy1ySsARXR2GlLx3MnRhooxOg3cWQZa6oBApc3fkFX041tazwaKkDntxLP0YiSVizIUPKYI2HQE0jJt6KNvSlPUE4xAlIHIzLKN/52ycNZ54QBUFIE0HzgApDXIpV6YBoeHryOkJFHiyEG1KmGwGmy9GzYwvbKih6p3quWU81xOAMWGVgEYpDTHB+HsfhYhFsfrge/whHscTjONaK4G2YXjSKYf1IvF4jYwMhuZaWhsbjv1cBmOjdyjJQubdWaFaZe1gAu7L2KfdwqcrYMbWTS456FFx5GJHV0u88K/kkXGbt7ZSPjCYnyRP13rwXt7KwARpdA6iU5UjLd2DuPx4CJUhwey4oakUpNLJWCmgkbnt3jtKDrIzG0DqdP7h4evfMOoB15q9uNwqIRA3JabGeh4sgWHAnEbJMsuSIoTkqwiYwbxyWjTLU3LRR7bg05C+W3g+ff7WDQy+8rlH7+/IU7tUreEzw/dw7HKMZxvHER/xw+o82tUCqqQrIh7APHIPMuayyeuV/jkMo8LfhGhffWk4qlPfvbQU1ml6WJ1mVbjsFapyhoURUGJrwqq000lZ1S7NTAjA1NfBdMzhW89b/YPsVM9lzCkbv0NhcqVjywerlEpNdE2suLBWo5uw3oOSi4Lj7uEes+AJUTXUyJRIyIc49e+HMGCOMJtQMPkhgodhsaMxZS+lMyHPPPmQW9pWbmcX1/iHhZd7tqT8irQSjjTiMUQvmtOnPvC+mpqDjFCrG4DhqOJ0x4HO5E3FF//ZePrqWg8PDHz22263qsuB9gjDT7/yRd2PLMraHbByvunI/nwp0PGr2PT1i1ynydlttWQhvgFBUmBQmdjWexKEo0r+kf8IrzF9dJiM2dJqaKt/o8AAwBrUhqpGwiGEQAAAABJRU5ErkJggg==" alt="edit privacy">Edit Privacy</div>
+                </div>
+            </div>
+            <div class="right_data" id="my_food_div">
+                <div class="my_foods" id="my_foods_data">
+                    <div>
+                        <p>My Foods:</p>
+                    </div>
+                    <hr>
+                    <div class="food_buttons">
+                        <p>Select:</p>
+                        <div class="blue" id="select_all_food">All</div>
+                        <div class="blue">None</div>
+                        <button id="remove_all" class="my_food_btn">Remove</button>
+                        <button id="sort_all" class="my_food_btn">Sort</button>
+                    </div>
+                    <div class="table_data food_table_data">
+                        <p id="my_foods_para">No previously entered foods available</p>
+                        <table id="my_food_table" class="table_style" style="display: none;"></table>
+                    </div>
+                </div>
+            </div>
+            <div class="right_data" id="costum_food" style="display: none;">
+                <div class="my_foods" id="custom_foods_data">
+                    <div>
+                        <p>Custom Foods:</p>
+                    </div>
+                    <hr>
+                    <div class="food_buttons">
+                        <p>Select:</p>
+                        <div class="blue" id="remove_all_custom_foods">All</div>
+                        <div class="blue">None</div>
+                        <button id="new_food_tab" class="my_food_btn">New</button>
+                        <button id="delete_custom_food" class="my_food_btn">Delete</button>
+                        <button id="custom_sort" class="my_food_btn">Sort</button>
+                    </div>
+                    <div id="pop_up_food" class="pop_up" style="display: none;">
+                        <div class="custom_heading">
+                            <p>Create Custom Foods:</p>
+                            <div id="cross">+</div>
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="">Name:</label>
+                            <input type="text" placeholder="name" id="new_custom_food"/>
+                        </div>
+                        <div>
+                            <label for="">Calories:</label>
+                            <input type="number" placeholder="calories" id="new_calories">
+                        </div>
+                        <div>
+                            <label for="">Protein:</label>
+                            <input type="number" placeholder="protein" id="new_protein">
+                        </div>
+                        <input type="submit" id="submit_food" />
+                    </div>
+                    <div class="table_data">
+                        <p id="my_foods_para">No previously entered foods available</p>
+                        <table id="my_food_table" style="display: none;"></table>
+                    </div>
+                </div>
+            </div>
+            <div class="right_data" style="display: none;" id="my_exercise_div">
+                <div class="my_foods" id="my_exercises_data">
+                    <div>
+                        <p>My Exercises:</p>
+                    </div>
+                    <hr>
+                    <div class="food_buttons">
+                        <p>Select:</p>
+                        <div class="blue" id="remove_all_exercise">All</div>
+                        <div class="blue">None</div>
+                        <button id="remove_exercise" class="my_food_btn">Remove</button>
+                        <button id="sort_exercise" class="my_food_btn">Sort</button>
+                    </div>
+                    <div class="table_data">
+                        <p id="my_exercise_para">No previously entered foods available</p>
+                        <table id="my_exercise_table" class="table_style" style="display: none;"></table>
+                    </div>
+                </div>
+            </div>
+            <div class="right_data" id="costum_exercises" style="display: none">
+                <div class="my_foods" id="custom_foods_data">
+                    <div>
+                        <p>Custom Exercises:</p>
+                    </div>
+                    <hr>
+                    <div class="food_buttons">
+                        <p>Select:</p>
+                        <div class="blue" id="remove_all_custom_foods">All</div>
+                        <div class="blue">None</div>
+                        <button id="new_exercise_tab" class="my_food_btn">New</button>
+                        <button id="delete_custom_food" class="my_food_btn">Delete</button>
+                        <button id="custom_sort" class="my_food_btn">Sort</button>
+                    </div>
+                    <div id="pop_up_exercise" class="pop_up" style="display: none;">
+                        <div class="custom_heading">
+                            <p>Create Custom Exercises:</p>
+                            <div id="cross_exe">+</div>
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="">Name:</label>
+                            <input type="text" placeholder="name" id="new_custom_food"/>
+                        </div>
+                        <div>
+                            <label for="">Calories burn:</label>
+                            <input type="number" placeholder="calories burn" id="new_calories">
+                        </div>
+                        <div>
+                            <label for="">Time:</label>
+                            <input type="number" placeholder="time" id="new_protein">
+                        </div>
+                        <input type="submit" id="submit_exercise" />
+                    </div>
+                    <div class="table_data">
+                        <p id="my_foods_para">No previously entered foods available</p>
+                        <table id="my_food_table" style="display: none;"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/settings.js"></script>
+    </body>
+</html>

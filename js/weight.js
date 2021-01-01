@@ -85,7 +85,6 @@
             } else {
                 alert("Please provide correct Date of birth")
             }
-            
         }
         let output = {}
         function getData(){
@@ -177,7 +176,7 @@
             let btn = document.createElement("a")
             btn.innerHTML = "Home"
             btn.setAttribute("class", "btn_input")
-            btn.setAttribute("href", "")
+            btn.setAttribute("href", "../Home_page/index.html")
 
             div.appendChild(header)
             div.appendChild(child_div_one)

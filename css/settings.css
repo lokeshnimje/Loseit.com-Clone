@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    background-color: #F7F8F9;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 35px;
+    background-image: linear-gradient(to right,#114d82,#2971b1, #1A76C0, #1A76C0, #2971b1,#114D82);
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.nav__menu {
+    display: flex;
+}
+.nav__menu > a {
+    text-decoration: none;
+    color: white;
+    margin: 6px;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.nav__menu > a:hover{
+    text-decoration: underline;
+}
+.nav__menu > a:active {
+    background-color:#003F7D;
+}
+#selected {
+    background-color:#003F7D;
+}
+#logo {
+    position: absolute;
+    left: 50px;
+    top: 4px;
+    width: 5%;
+}
+
+.link > a{
+    padding: 0px;
+    margin: 12px 4px;
+}
+.link > img {
+    width: 25px;
+    padding: 5px;
+    border-radius: 8px;
+}
+.main{
+    width: 60%;
+    height: 600px;
+    margin: 40px auto;
+}
+.manage_links{
+    width: 23%;
+    height: 100%;
+    float: left;
+}
+
+.manage div{
+    padding: 2px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.manage div:hover{
+    background: linear-gradient(to right,#114d82,#2971b1, #1A76C0, #1A76C0, #2971b1,#114D82);
+    color: white;
+    border-radius: 2px;
+    margin: 0 3px;
+    text-decoration: underline;
+}
+.manage p{
+    font-size: 15px;
+    margin-bottom: 3px;
+    margin-left: 4px;
+}
+.manage div img{
+    align-self: center;
+    margin-right: 6px;
+}
+.right_data{
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+.my_foods{
+    background-color: #e2e6e9;
+    font-size: 12px;
+    font-weight: bolder;
+    border-radius: 0px;
+    background: linear-gradient(145deg, #d4d9db, #fdffff);
+    box-shadow:  5px 5px 10px #eaeff1, 
+             -5px -5px 10px #eef3f5;
+    margin-top: 20px;
+        
+}
+.my_foods > div:nth-child(1) p{
+    font-size: 12px;
+    color: rgb(88, 88, 88);
+    font-weight: bolder;
+    padding: 5px 15px;
+    margin: 0;
+}
+.my_food_btn{
+ border: 1px solid darkgray;
+ background-color: #e2e6e9;
+ padding: 4px 8px;
+ width: fit-content;
+ border-radius: 6px;
+ margin-left: 8px;
+ font-size: 12px;
+ min-width: 64px;
+}
+.my_food_btn:hover{
+    background-color: darkgray;
+}
+.food_buttons{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 11px;
+}
+.blue{
+    color: rgb(61, 148, 177);
+    margin: 0 5px;
+    cursor: pointer;
+}
+.blue:hover{
+    text-decoration: underline;
+}
+.table_data{
+    background-color: white;
+    width: 100%;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+.table_row:nth-child(even){
+    border-radius: 0px;
+    background: linear-gradient(145deg, #d4d9db, #fdffff);
+    box-shadow:  5px 5px 10px #eaeff1, 
+                 -5px -5px 10px #eef3f5;
+    width: 100%;
+}
+
+.table_style{
+    display: block;
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 3%;
+}
+.table_data p{
+    margin: 10px;
+}
+table tr td{
+    padding: 5px 65px;
+}
+.food_table_data table tr td{
+    padding: 5px 75px;
+}
+.pop_up{
+    position: absolute;
+    z-index: 20;
+    width: fit-content;
+    height: fit-content;
+    background-color: #f1f2f3;
+    margin-left: 160px;
+}
+.pop_up div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.pop_up .custom_heading{
+    margin: 0;
+    background-color: darkgray;
+}
+.pop_up .custom_heading p{
+    padding: 1px;
+    margin: 0;
+}
+.pop_up hr{
+    margin: 0;
+    font-weight: bolder;
+}
+.pop_up div label {
+    float: left;
+    margin: 0 10px;
+}
+.pop_up div input{
+    padding: 4px;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+.pop_up > input{
+    display: block;
+    margin: 15px auto;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    background: linear-gradient(to right,#114d82,#2971b1, #1A76C0, #1A76C0, #2971b1,#114D82);
+    width: 80px;
+}
+.custom_heading div{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transform: rotate(45deg);
+    margin-right: 10px;
+}
