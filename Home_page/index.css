@@ -193,8 +193,8 @@ nav {
     font-weight: bold;
 }
 .right {
-    width: 300px;
-    margin-left: 40px;
+    width: 22%;
+    margin: 40px;
 }
 .right__data {
     width: 100%;
@@ -223,6 +223,42 @@ nav {
     font-weight: bold;
     color: rgb(94, 92, 92);
     margin: 2px 6px;
+}
+#my__day {
+    color: #2C479B;
+}
+.right__data__result {
+    display: flex;
+    flex-direction: column;
+}
+.graph {
+    width: 100%;
+    height: 5px;
+    background-color: grey;
+}
+.data__result {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: grey;
+}
+#daily__data {
+    color: black;
+    margin: 10px 0px;
+}
+
+.nutrients > div:nth-of-type(odd){
+    background-color: rgb(236, 235, 235);
+}
+.dark > p:nth-child(1) {
+    font-weight: bold;
+}
+.nutrients__data {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    padding-right: 50px;
+    padding-left: 5px;
 }
 .right__premium {
     width: 60%;
