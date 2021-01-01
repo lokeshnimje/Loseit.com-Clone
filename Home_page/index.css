@@ -591,7 +591,8 @@ nav {
     color: red;
 }
 .input_content td{
-    padding: 2px 36px;
+    min-width: 50px;
+    padding: 2px 20px;
 }
 .input_content:hover{
     background-color: white;
