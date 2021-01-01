@@ -90,14 +90,14 @@
                     </div>
                     <div class="left__container__header__value">
                         <h6>1,579</h6>
-                        <h6>-</h6>
-                        <h6>-</h6>
-                        <h6>-</h6>
+                        <h6 id="total_cal">-</h6>
+                        <h6 id="total_exer">-</h6>
+                        <h6 id="difference">-</h6>
                         <h6 id="header__value__selected">1,579</h6>
                     </div>
                     <div class="line"></div>
                     <div class="left__container__mealType">
-                        <h5>Breakfast: 0</h5>
+                        <h5 id="breakfast_count">Breakfast: 0</h5>
                         <input type="text" placeholder=" Search & add food" class="search__food" id="enter_breakfast">
                     </div>
                     <div class="left__container__food__box" id="breakfast_box">
@@ -105,7 +105,7 @@
                         <p id="breakfast_para">No food logged for breakfast</p>
                     </div>
                     <div class="left__container__mealType">
-                        <h5>Lunch: 0</h5>
+                        <h5 id="lunch_count"></h5>
                         <input type="text" placeholder=" Search & add food" class="search__food" id="enter_lunch">
                     </div>
                     <div class="left__container__food__box">
@@ -113,7 +113,7 @@
                         <p id="lunch_para">No food logged for lunch</p>
                     </div>
                     <div class="left__container__mealType">
-                        <h5>Dinner: 0</h5>
+                        <h5 id="dinner_count"></h5>
                         <input type="text" placeholder="Search & add food" class="search__food" id="enter_dinner">
                     </div>
                     <div class="left__container__food__box">
@@ -121,7 +121,7 @@
                         <p id="dinner_para">No food logged for dinner</p>
                     </div>
                     <div class="left__container__mealType">
-                        <h5>Exercise: 0</h5>
+                        <h5 id="exercise_count"></h5>
                         <input type="text" placeholder="Search & add exercise" class="search__food" id="enter_exercise">
                     </div>
                     <div class="left__container__food__box">
@@ -181,7 +181,7 @@
                         <div class="comment__box__textarea">
                             <p>Write a comment</p>
                             <textarea name="comment" id="textarea" cols="30" rows="4"></textarea>
-                            <button id="share">Share</button>
+                            <button id="share" class="share">Share</button>
                             <div class="table__comment" id="taskList">
                             </div>
                         </div>

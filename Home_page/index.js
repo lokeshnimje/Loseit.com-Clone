@@ -72,8 +72,13 @@ addTaskButton.addEventListener("click", function(){
         localStorage.setItem("localtask", JSON.stringify(taskObj));
         addTaskInput.value = "";
     }
+    document.getElementById("share").style.display = "none"
     showTask();
 });
+
+document.getElementById("textarea").addEventListener("click", function(){
+    document.getElementById("share").style.display = "block"
+})
 
 function showTask() {
     var task = localStorage.getItem("localtask");
@@ -100,7 +105,6 @@ function deletItem(index){
     localStorage.setItem("localtask", JSON.stringify(taskObj));
     showTask();
 }
-=======
 
 document.getElementById("foodType").addEventListener("click", function(){
 let display = document.getElementById("dropdown__food").style.display
@@ -164,13 +168,16 @@ function addBreakfast(){
                       
     }
     table.innerHTML = break_data
+    refreshPage()
 }
 let arr = []
 let out = ""
 
 function breakfast_list_item(){
     let cart = JSON.parse(localStorage.getItem("breakfast_cart"))
-  
+    document.getElementById("breakfast_count").innerHTML =""
+    document.getElementById("breakfast_count").innerHTML = `Breakfast: ${cart.length}`
+    console.log(cart.length)
     for (i in cart){
         arr.push(cart[i])
     }
@@ -189,6 +196,7 @@ function breakfast_list_item(){
                     </tr>`
                  }        
     document.getElementById("breakfast_table").innerHTML = out
+    refreshPage()
 }
 breakfast_list_item()
 
@@ -224,6 +232,7 @@ function addFood(id){
                     </tr>`
                  }        
     document.getElementById("breakfast_table").innerHTML = out
+    refreshPage()
 }
 
 function deleteItem(id){
@@ -254,6 +263,7 @@ document.getElementById("search_breakfast").addEventListener("click", function()
         
     }
          table.innerHTML = search_data
+         refreshPage()
 })
 
 document.getElementById("enter_breakfast").addEventListener("keyup", function(event){
@@ -280,6 +290,7 @@ document.getElementById("enter_breakfast").addEventListener("keyup", function(ev
          table.innerHTML = search_data
 
     }
+    refreshPage()
 })
 
 // document.getElementById("my_food").addEventListener("click", function(){
@@ -322,6 +333,7 @@ document.getElementById("find_all_lunch").addEventListener("click", function(){
                       `       
     }
     table.innerHTML = lunch_data
+    refreshPage()
 })
 
 let lunch_arr = []
@@ -346,6 +358,7 @@ function addLunch(id){
 
     localStorage.setItem("lunch_cart", JSON.stringify(lunch_arr))
     let cart = JSON.parse(localStorage.getItem("lunch_cart"))
+    
     lunch_out = ""
         for (i in cart){
             lunch_out += `<tr class = "table_row input_content" id = "${cart[i].name}">
@@ -357,6 +370,7 @@ function addLunch(id){
                     </tr>`
                  }        
     document.getElementById("lunch_table").innerHTML = lunch_out
+    refreshPage()
 }
 
 function lunch_list_item(){
@@ -380,6 +394,7 @@ function lunch_list_item(){
                     </tr>`
                  }        
     document.getElementById("lunch_table").innerHTML = lunch_out
+    refreshPage()
 }
 lunch_list_item()
 
@@ -412,6 +427,7 @@ document.getElementById("search_lunch").addEventListener("click", function(){
         
     }
          table.innerHTML = search_data
+         refreshPage()
 })
 
 document.getElementById("enter_lunch").addEventListener("keyup", function(event){
@@ -438,10 +454,10 @@ document.getElementById("enter_lunch").addEventListener("keyup", function(event)
          table.innerHTML = search_data
 
     }
+    refreshPage()
 })
 
 // js for dinner menu
-
 
 document.getElementById("find_all_dinner").addEventListener("click", function(){
     let data = JSON.parse(localStorage.getItem("dinner"))
@@ -457,6 +473,7 @@ document.getElementById("find_all_dinner").addEventListener("click", function(){
                       `       
     }
     table.innerHTML = dinner_data
+    refreshPage()
 })
 
 let dinner_arr = []
@@ -491,6 +508,7 @@ function addDinner(id){
                     </tr>`
                  }        
     document.getElementById("dinner_table").innerHTML = dinner_out
+    refreshPage()
 }
 
 function dinner_list_item(){
@@ -514,6 +532,7 @@ function dinner_list_item(){
                     </tr>`
                  }        
     document.getElementById("dinner_table").innerHTML = dinner_out
+    refreshPage()
 }
 dinner_list_item()
 
@@ -546,6 +565,7 @@ document.getElementById("search_dinner").addEventListener("click", function(){
         
     }
          table.innerHTML = search_data
+         refreshPage()
 })
 
 document.getElementById("enter_dinner").addEventListener("keyup", function(event){
@@ -572,9 +592,12 @@ document.getElementById("enter_dinner").addEventListener("keyup", function(event
          table.innerHTML = search_data
 
     }
+    refreshPage()
 })
 
 // Exercise Button
+
+
 document.getElementById("exercise_btn").addEventListener("click", function(){
     popup.style.display = "block"
     document.getElementById("exer_menu").style.display = "flex"
@@ -597,6 +620,7 @@ document.getElementById("find_all_exercise").addEventListener("click", function(
                       `       
     }
     table.innerHTML = exercise_data
+    refreshPage()
 })
 
 let exercise_arr = []
@@ -632,6 +656,7 @@ function addExercise(id){
                     </tr>`
                  }        
     document.getElementById("exercise_table").innerHTML = exercise_out
+    refreshPage()
 }
 
 function exercise_list_item(){
@@ -655,6 +680,7 @@ function exercise_list_item(){
                     </tr>`
                  }        
     document.getElementById("exercise_table").innerHTML = exercise_out
+    refreshPage()
 }
 exercise_list_item()
 
@@ -687,6 +713,7 @@ document.getElementById("search_exercise").addEventListener("click", function(){
         
     }
          table.innerHTML = search_data
+         refreshPage()
 })
 
 document.getElementById("enter_exercise").addEventListener("keyup", function(event){
@@ -713,6 +740,78 @@ document.getElementById("enter_exercise").addEventListener("keyup", function(eve
          table.innerHTML = search_data
 
     }
+    refreshPage()
 })
 
+// data manipulation
+function refreshPage(){
+
+    
+function displayLunchCount(){
+    let cart = JSON.parse(localStorage.getItem("lunch_cart"))
+    document.getElementById("lunch_count").innerHTML = `Lunch: ${cart.length}`
+}
+displayLunchCount()
+
+function displayDinnerCount(){
+    let cart = JSON.parse(localStorage.getItem("dinner_cart"))
+    if(cart == null){
+        document.getElementById("dinner_count").innerHTML = `Dinner: 0`
+    } else {
+        document.getElementById("dinner_count").innerHTML = `Dinner: ${cart.length}`
+    }
+    
+}
+displayDinnerCount()
+
+function displayExerciseCount(){
+    let cart = JSON.parse(localStorage.getItem("exercise_cart"))
+    if(cart == null){
+        document.getElementById("exercise_count").innerHTML = `Exercise: 0`
+    } else {
+        document.getElementById("exercise_count").innerHTML = `Exercise: ${cart.length}`
+    }
+    
+}
+displayExerciseCount()
+
+function totalCalories(){
+    let sum = 0;
+    let breakfast = JSON.parse(localStorage.getItem("breakfast_cart"))
+    let lunch = JSON.parse(localStorage.getItem("lunch_cart"))
+    let dinner = JSON.parse(localStorage.getItem("dinner_cart"))
+
+    for (i in breakfast){
+        sum += breakfast[i].calories
+    }
+    for (i in lunch){
+        sum += lunch[i].calories
+    }
+    for (i in dinner){
+        sum += dinner[i].calories
+    }
+    document.getElementById("total_cal").innerHTML = sum
+}
+totalCalories()
+
+function totalExercise(){
+    let diff = 0
+    let cart = JSON.parse(localStorage.getItem("exercise_cart"))
+    console.log(cart)
+    for (i in cart){
+        diff += cart[i].cal
+    }
+    document.getElementById("total_exer").innerHTML = diff
+}
+totalExercise()
+
+function netCount(){
+    let food = document.getElementById("total_cal").innerHTML
+    let exercise = document.getElementById("total_exer").innerHTML
+    document.getElementById("difference").innerHTML = food - exercise
+}
+netCount()
+}
+
+refreshPage()
 
