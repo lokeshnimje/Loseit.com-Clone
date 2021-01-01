@@ -68,7 +68,9 @@ nav {
     padding: 10px;
     margin: 20px;
 }
-
+#activity__menu {
+    color:purple ;
+}
 
 .left__menu__text {
     text-decoration: none;
@@ -82,45 +84,70 @@ nav {
     margin: 5px 0px;
     color: #2C475C;
 }
-.mid {
+.mid__activity {
     width: 35%;
     border: 1px solid #F0F0F0;
     border-radius: 8px 8px 0px 0px;
     height: 500px;
     margin: 20px;
+    display: block;
     /* padding: 10px; */
 }
-.comment {
-    width: 100%;
-    padding: 10px;
+#input {
+    width: 80%;
 }
-.comment>p{
-    font-weight: bold;
-    margin: 0px 10px;
-}
-.comment > input {
-    width: 90%;
+.comment__box {
     display: block;
-    margin: 5px auto;
-}
-.comment__list {
-    background-color: #F7F8F9;
     width: 100%;
-    height: fit-content;
+    height: 400px;
+    padding: 0px 15px;
+    background-color:#F7F8F9 ;
+    /* display: flex; */
+}
+.comment__box__textarea > p{
+    font-size: 11px;
+    font-weight: bold;
+}
+.comment__box__textarea > button {
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(224, 221, 221);
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.table__comment {
+    max-width: 100%;
+    max-height: 100px;
+}
+.commentList {
+    border: 1px solid rgb(204, 203, 203);
+    border-radius: 10px;
+    max-width: 300px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#taskList {
+    max-width: 100%;
 }
 #profileImg {
     width: 30px;
-    border-radius: 20px;
-    padding-left: 1px;
-}
+    border-radius: 5px;
+    padding-left: 3px;
+} 
 .row {
-    margin: 20px;
+    margin: 15px;
     border: 1px solid #F0F0F0;
-    border-radius: 18px;
+    color: rgb(82, 80, 80);
+    border-radius: 5px;
     background-color: white;
-    height: 40px;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #deletComnt {
     border: none;
@@ -132,14 +159,41 @@ nav {
 .row > p{
     font-size: 15px;
     font-style: italic;
+    padding: 0px 5px;
+}
+
+.invitation {
+    display: none;
+    width: 45%;
+    margin: 20px 40px;
+    height: fit-content;
+}
+.invitation__content__box{
+    background-color: white;
+    height: 120px;
+    margin-bottom: 20px;
+}
+.invitation__content__box > p{
+    font-weight: bold;
+    color: #6d6a6a;
+    padding: 28px;
+}
+.invitation__box__heading {
+    background-color: #EDF0F3;
+    color: #2C475C;
+    font-weight: bold;
+    border-radius: 8px 8px 0px 0px;
+    padding: 3px 5px;
+    font-size: 11px;   
 }
 .right {
-    width: fit-content;
+    width: 10%;
     height: fit-content;
     /* border: 1px solid blue; */
     border-radius: 8px 8px 0px 0px ;
     background-color: white;
     margin:20px;
+    display: block;
 }
 .right__header {
     background-color: #EDF0F3;
