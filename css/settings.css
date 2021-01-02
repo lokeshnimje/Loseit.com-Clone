@@ -3,7 +3,6 @@ body{
     background-color: #F7F8F9;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 nav {
     width: 100%;
     height: 35px;
@@ -24,7 +23,9 @@ nav {
     padding: 3px 8px;
     border-radius: 3px;
 }
-
+.nav__menu > a > img {
+    width: 16px;
+}
 .nav__menu > a:hover{
     text-decoration: underline;
 }
@@ -54,6 +55,7 @@ nav {
     width: 60%;
     height: 600px;
     margin: 40px auto;
+    margin-bottom: 0;
 }
 .manage_links{
     width: 23%;
@@ -217,4 +219,34 @@ table tr td{
     cursor: pointer;
     transform: rotate(45deg);
     margin-right: 10px;
+}
+
+.footer {
+    clear: both;
+}
+.footer__line {
+    width: 60%;
+    margin: 5px  auto;
+    height: 1px;
+    background-color: #aaacad;
+}
+.footer__links {
+    display: flex;
+    justify-content: center;
+}
+.footer__links > a {
+    font-size: 11px;
+    color: #aaacad;
+    margin: 6px 8px;
+    text-decoration: none;
+}
+.footer__links > a:hover {
+    text-decoration: underline;
+    color:#6FB8E7;
+}
+.footer__text {
+    font-size: 11px;
+    color: #aaacad;
+    text-align: center;
+    margin-bottom: 10px;
 }

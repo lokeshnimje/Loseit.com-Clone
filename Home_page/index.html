@@ -13,7 +13,7 @@
             <a id="selected" href="./index.html">Home</a>
             <a href="">Goals</a>
             <a href="../Community_page/community.html">Community</a>
-            <a href="">Challenges</a>
+            <a href="../challengespage/challenges.html">Challenges</a>
             <a href="">Insights</a>
             <a href="">Forums</a>
             <a href="">Apps & Devices</a>
@@ -25,7 +25,7 @@
             <a href="">|</a>
             <a href="">Upgrade</a>
             <a href="">|</a>
-            <a href="">Sign out</a>
+            <a href="../landingpage/project22.html">Sign out</a>
             <img src="https://st.depositphotos.com/1779253/5140/v/600/depositphotos_51405259-stock-illustration-male-avatar-profile-picture-use.jpg" alt="profile">
         </div>
     </nav>
@@ -89,7 +89,7 @@
                         <h6>Under</h6>
                     </div>
                     <div class="left__container__header__value">
-                        <h6>1,579</h6>
+                        <h6 id="calorie_para">1,579</h6>
                         <h6 id="total_cal">-</h6>
                         <h6 id="total_exer">-</h6>
                         <h6 id="difference">-</h6>
@@ -142,20 +142,20 @@
                         <div class="graph"></div>
                             <div class="data__result" id="daily__data">
                             <p>Daily calorie budget</p>
-                            <p>1,579</p>
+                            <p id="calorie_para">1,579</p>
                         </div>
                         <div class="data__result">
-                            <p>Food calorie consumedt</p>
-                            <p>0</p>
+                            <p>Food calorie consumed</p>
+                            <p id="calorie_consumed">0</p>
                         </div>
                         <div class="data__result">
                             <p>Exercise calorie burned</p>
-                            <p>0</p>
+                            <p id="calorie_loss">0</p>
                         </div>
                         <div class="line"></div>
                         <div class="data__result" id="daily__data">
                             <p>Net calories so far today</p>
-                            <p>0</p>
+                            <p id="net_calorie">0</p>
                         </div>
                     </div>
 
@@ -163,7 +163,7 @@
                         <div class="graph"></div>
                             <div class="data__result" id="daily__data">
                             <p>Weekly calorie budget</p>
-                            <p>1,579</p>
+                            <p>1579</p>
                         </div>
                         <div class="data__result">
                             <p>Food calorie consumedt</p>
@@ -227,9 +227,9 @@
                     </div>
                     <div class="right__data__result">
                         <div class="right__data__bottom__left">
-                            <img src="https://www.iconsdb.com/icons/preview/green/down-xxl.png" alt="down arrow">
-                            <h3> 0 kg</h3>
-                            <p>so far</p>
+                            <!-- <img id="show_image" src="https://www.iconsdb.com/icons/preview/green/down-xxl.png" alt="down arrow"> -->
+                            <p id="show_image"><i class="fa fa-arrow-down fa-3x" aria-hidden="true"></i></p>
+                            <h3 id="show_weight"> 0 kg</h3>
                         </div>
                         <div class="right__data__bottom__box">
                             <p>You'll reach your goal of losing -3 kg on dec 29, 2020</p>
@@ -237,10 +237,10 @@
                             <p>today's weight</p>
                             <div class="right__bottom__input__data">
                                 <div class="right__data__bottom__box__kg">
-                                    <input type="text" placeholder="57">
+                                    <input type="text" placeholder="57" id="weight">
                                     <p>kg</p>
                                 </div>
-                                <button>Record</button>
+                                <button id="record_weight">Record</button>
                             </div>
                         </div>
                     </div>

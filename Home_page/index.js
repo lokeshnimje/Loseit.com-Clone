@@ -152,6 +152,7 @@ document.getElementById("breakfast_list").addEventListener("click", function(){
     document.getElementById("exer_menu").style.display = "none"
     document.getElementById("food_menu").style.display = "flex"
     document.getElementById("find_all_exercise").style.display = "none"
+    document.getElementById("search_exercise").style.display = "none"
     table.innerHTML = ""
 })
 
@@ -164,6 +165,7 @@ document.getElementById("lunch_list").addEventListener("click", function(){
     document.getElementById("exer_menu").style.display = "none"
     document.getElementById("food_menu").style.display = "flex"
     document.getElementById("find_all_exercise").style.display = "none"
+    document.getElementById("search_exercise").style.display = "none"
     table.innerHTML = ""
 })
 
@@ -176,6 +178,7 @@ document.getElementById("dinner_list").addEventListener("click", function(){
     document.getElementById("exer_menu").style.display = "none"
     document.getElementById("food_menu").style.display = "flex"
     document.getElementById("find_all_exercise").style.display = "none"
+    document.getElementById("search_exercise").style.display = "none"
     table.innerHTML = ""
 })
 
@@ -209,8 +212,8 @@ let out = ""
 function breakfast_list_item(){
     let cart = JSON.parse(localStorage.getItem("breakfast_cart"))
     document.getElementById("breakfast_count").innerHTML =""
-    document.getElementById("breakfast_count").innerHTML = `Breakfast: ${cart.length}`
-    console.log(cart.length)
+   
+    
     for (i in cart){
         arr.push(cart[i])
     }
@@ -277,6 +280,7 @@ function deleteItem(id){
 
 document.getElementById("search_breakfast").addEventListener("click", function(){
     let value = document.getElementById("input_breakfast").value
+    console.log(value)
     let cart = JSON.parse(localStorage.getItem("breakfasts"))
     let search_data = ""
     for (i in cart){
@@ -295,6 +299,7 @@ document.getElementById("search_breakfast").addEventListener("click", function()
         
     }
          table.innerHTML = search_data
+         document.getElementById("input_breakfast").value = ""
          refreshPage()
 })
 
@@ -449,7 +454,7 @@ document.getElementById("search_lunch").addEventListener("click", function(){
                         <td style = "padding-left:0; color:#114d82" >${cart[i].name}</td>
                         <td>${cart[i].calories} cal</td>
                         <td>${cart[i].protein} g</td>
-                        <td><button onclick = addLunch(${data[i].id}) class = "close_btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button> 
+                        <td><button onclick = addLunch(${cart[i].id}) class = "close_btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button> 
                         </tr>`        
             break;
         } else {
@@ -585,7 +590,7 @@ document.getElementById("search_dinner").addEventListener("click", function(){
         if(value.toLowerCase() == cart[i].name.toLowerCase()){
              search_data = ` <tr class = "table_row">
                         <td style = "padding-right:2px"><img src =${cart[i].img} /></td>
-                        <td style = "padding-left:0; color:#114d82" >${cart[i].name}</td>
+                        <td style = "padding-left:0; color:#114d82;" >${cart[i].name}</td>
                         <td>${cart[i].calories} cal</td>
                         <td>${cart[i].protein} g</td>
                         <td><button onclick = addDinner(${cart[i].id}) class = "close_btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button> 
@@ -632,6 +637,7 @@ document.getElementById("enter_dinner").addEventListener("keyup", function(event
 
 document.getElementById("exercise_btn").addEventListener("click", function(){
     popup.style.display = "block"
+    document.getElementById("find_all_breakfast").style.display = 'none'
     document.getElementById("find_all_lunch").style.display = "none"
     document.getElementById("find_all_dinner").style.display = "none"
     document.getElementById("exer_menu").style.display = "flex"
@@ -739,7 +745,7 @@ document.getElementById("search_exercise").addEventListener("click", function(){
                         <td style = "padding-left:0; color:#114d82" >${cart[i].name}</td>
                         <td>${cart[i].cal} cal</td>
                         <td>${cart[i].protein}</td>
-                        <td><button onclick = addExercise(${data[i].id}) class = "close_btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button> 
+                        <td><button onclick = addExercise(${cart[i].id}) class = "close_btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button> 
                         </tr>`        
             break;
         } else {
@@ -748,7 +754,9 @@ document.getElementById("search_exercise").addEventListener("click", function(){
         
     }
          table.innerHTML = search_data
+         document.getElementById("input_breakfast").innerHTML = ""
          refreshPage()
+         document.getElementById("input_breakfast").value = ""
 })
 
 document.getElementById("enter_exercise").addEventListener("keyup", function(event){
@@ -779,9 +787,20 @@ document.getElementById("enter_exercise").addEventListener("keyup", function(eve
 })
 
 // data manipulation
+
+let calorie_budget;
 function refreshPage(){
 
-    
+function displayBreakfastCount(){
+    let cart = JSON.parse(localStorage.getItem("breakfast_cart"))
+    if(cart == null){
+        document.getElementById("breakfast_count").innerHTML = `Breakfast: 0`
+    } else {
+        document.getElementById("breakfast_count").innerHTML = `Breakfast: ${cart.length}`
+    }
+}
+displayBreakfastCount()
+
 function displayLunchCount(){
     let cart = JSON.parse(localStorage.getItem("lunch_cart"))
     if (cart == null){
@@ -830,6 +849,7 @@ function totalCalories(){
         sum += dinner[i].calories
     }
     document.getElementById("total_cal").innerHTML = sum
+    document.getElementById("calorie_consumed").innerHTML = sum
 }
 totalCalories()
 
@@ -840,6 +860,7 @@ function totalExercise(){
         diff += cart[i].cal
     }
     document.getElementById("total_exer").innerHTML = diff
+    document.getElementById("calorie_loss").innerHTML = diff
 }
 totalExercise()
 
@@ -847,9 +868,38 @@ function netCount(){
     let food = document.getElementById("total_cal").innerHTML
     let exercise = document.getElementById("total_exer").innerHTML
     document.getElementById("difference").innerHTML = food - exercise
+    document.getElementById("net_calorie").innerHTML = food - exercise
 }
 netCount()
 }
 
+
 refreshPage()
 
+function calorie(){
+    let data = JSON.parse(localStorage.getItem("weight"))
+    calorie_budget = data[0].current_calorie
+    document.getElementById("calorie_para").innerHTML = calorie_budget
+    document.getElementById("header__value__selected").innerHTML = calorie_budget
+    document.getElementById("calorie_para").innerHTML = calorie_budget
+}
+calorie()
+
+document.getElementById("record_weight").addEventListener("click", function(){
+    let weight = document.getElementById("weight").value
+    let prev_weight = JSON.parse(localStorage.getItem("weight"))
+    let differerce = weight - prev_weight[0].weight
+    console.log(differerce)
+    if(differerce >= 0){
+        document.getElementById("show_weight").style.color = "red"
+        document.getElementById("show_image").style.color = "red"
+        document.getElementById("show_image").style.transform = "rotate(180deg)"
+    }else{
+        document.getElementById("show_weight").style.color = "#008000"
+        document.getElementById("show_image").style.color = "#008000"
+        document.getElementById("show_image").style.transform = "rotate(0deg)"
+    }
+    document.getElementById("show_weight").innerHTML = `${differerce.toFixed(2)} Kg`
+    localStorage.setItem("weight",JSON.stringify(prev_weight))
+    document.getElementById("weight").value = "";
+})

@@ -4,123 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>challenges</title>
-    <style> 
-        * {
-            font-family: "Segoe UI", "Lucida Grande", "Tahoma", "Helvetica";
-        }
-        .challenge {
-            width:98%;
-            min-height: 1000px;
-            /* border: solid black; */
-            display: flex;
-            background-color: rgb(253, 246, 235);
-        }
-        .box1 {
-            margin-top: 60px;
-            margin-left: 170px;
-        }
-        .findch {
-            display: flex;
-            height: 25px;
-            width: 185px;
-            background-color: #2c475c;
-            border-radius: 4px;
-        }
-        .box2 {
-            margin-left: 50px;
-            margin-top: 60px;
-        }
-        .first {
-            width: 500px;
-            height: 80px;
-            background-color: #e2e6e9;
-            border-radius: 5px;
-            /* border: solid black; */
-        }
-        .search {
-            margin-left: 15px;
-            margin-top: 15px;
-            font-size: 10pt;
-            font-weight: bold;
-        }
-        .name {
-            display: flex;
-        }
-        .in {
-            margin-left: 15px;
-            width: 370px;
-        }
-        .findbtn {
-            margin-left: 20px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .secound {
-            width: 500px;
-            height: 80px;
-            border: solid 1px #f0f0f0;
-            margin-top: 10px;
-            border-radius: 5px;
-        }
-        .featured {
-            margin-top: 0px;
-            color: #2c475c;
-            font-weight: bold;
-        }
-        .header {
-            height: 25px;
-            width: 100%;
-            background-color: #e2e6e9;
-        }
-        .no {
-            margin: 10px;
-            color: gray;
-            font-weight: bold;
-            font-size: 15px;
-        }
-        .third {
-            width: 500px;
-            min-height: 100px;
-            border: solid 1px #f0f0f0;
-            margin-top: 10px;
-            border-radius: 5px;  
-        }
-        .removeitem {
-            border-radius: 50%;
-            background-color: grey;
-            cursor: pointer;
-            border: none;
-            
-            
-        }
-        .removeitem:hover {
-            background-color: red;
-        }
-        .box3 {
-            width: 250px;
-            margin-left: 50px;
-            margin-top: 75px;
-            min-height: 200px;
-            border: solid 1px #f0f0f0;
-            border-radius: 5px;
-        }
-        .popular{
-            font-weight: bold;
-        }
-        .heading {
-            height: 25px;
-            width: 100%;
-            background-color: #e2e6e9;
-        }
-    </style>
+    <link rel="stylesheet" href="./challanges.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <nav>
+        <div class="nav__menu">
+            <a href="../Home_page/index.html">Home</a>
+            <a href="">Goals</a>
+            <a href="../Community_page/community.html">Community</a>
+            <a id="selected" href="./challenges.html">Challenges</a>
+            <a href="">Insights</a>
+            <a href="">Forums</a>
+            <a href="">Apps & Devices</a>
+            <a href="">Messages</a>
+            <a href="../html/settings.html"><img src="https://cdn2.iconfinder.com/data/icons/basic-ui-color/38/Settings-512.png" alt="setting"></a>
+        </div>
+        <div class="nav__menu link">
+            <a href="">Lokesh</a>
+            <a href="">|</a>
+            <a href="">Upgrade</a>
+            <a href="">|</a>
+            <a href="../landingpage/project22.html">Sign out</a>
+            <img src="https://st.depositphotos.com/1779253/5140/v/600/depositphotos_51405259-stock-illustration-male-avatar-profile-picture-use.jpg" alt="profile">
+        </div>
+    </nav>
+    <img id="logo" src="https://i.imgur.com/4s7Meq5.png" alt="logo">
     <div class="challenge">
         <div class="box1">
-            <span color: #2c475c;>Challenges</span>
-            <div class="findch">
+            <h4>Challenges</h4>
+            <div id="findch">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAAC2ElEQVR42mNgGBHg/Qb5D9+2a/3/vkP//9et+v8/bNT9/3KV5v+Hi1T+35gp///8RMn/J7pE/x9sFvhPtKHXZzBcuj2b9f/DhTz/X6wQ3fd+vULA//1aPDD8cZW2ENCS2EeLVC6gW7Krluf/lnKO/+uLWP+vymU6g8+SY7fnMYjC+OpFqX5s6UWbGVNKvgDxO7bUomUK+dnmj5cqqQItuYhsye5abl2Qns2FnNKrcpjO47Nk3d25rCZgTkqJE9DgNyDDWVKK9wDxQaDYVyD/tmROjsmNWfLRyJbsqOYzA2lbV8hivyqXcS8+SxqBwZXNkNbABTQQZOgbtcKMiI87tIVWzXTh58ooSgWK/WBOLV52fYq0MLIl++u5JcCWFLNUAINrPm5LpjEYAy05wJBSJgM07A9TSvGCT3s0hIERvwUY8fP+b1NhZwb6COibtzfmqvPCLWkSuAozAxgnV1flMQfijXygJdOEUnJBlvxmSC2Z8WObjjLQkhNAS7a83qjOy5pavA9oyWcUS5r5W0B6t1ZwJKwvZj22KpSBGa8l/1cBFSQUCAAteQbEdxjSSsy/bzWU/7zNUFQiNzcEZAEwAWxF9Ymg7q5a7iJg6jq5qpyBn3A6rq9nAhreBcT/ofgBQ0rpdIbU4rlA9iugJa/ls9O9bsyS9YNYIvYTGCcfdtbxtKyqZ+Ah1oJ+hAXFVxiSSw4j+KV7dArSg57PUxEFpq79QEteHe8SDd9fL8pDfBZPLumFGwgyPKNCgSGpjBecEDIKpRliS7hfrNZyfrhQdc/NmfK3z02S0CK9HEktKQda8A/o4uNgQ9EAsFgpA+b4Lw8Xqmx83CfDSV5hlVwoBAyiFUBf+GKT/rBRLxNUdj1YpDKNZgUmTS35tt3Q8us2vRZgcN2DWvLq5iyFXcCITzvWxydEkeGfV6mIAov6A/iK+uNdYg9B+YSS+mQLUfVJi8Btgrl8WAAA0uyyMlymjTgAAAAASUVORK5CYII="/>
-                <p title="find challenge" style="margin-top: -0px; color: white; margin-left: 5px;" onclick="reloadpage()">Find Challenge</p>
+                <p title="find challenge" onclick="reloadpage()">Find Challenge</p>
             </div>
         </div>
         <div class="box2">
@@ -154,6 +69,19 @@
             <div class="popular heading">Popular challenges</div>
             <div class="no2" id="popular"></div>
         </div>
+    </div>
+    <div class="footer">
+        <div class="footer__line"></div>
+        <div class="footer__links">
+           <a href="">Jobs</a>
+           <a href="">Support</a>
+           <a href="">Blog</a>  
+           <a href="">Terms of Service</a>
+           <a href="">Privacy</a>
+           <a href="">Advisors</a>
+           <a href="">About</a>
+        </div>
+        <div class="footer__text">@ Copyright FitNow, Inc.All Rights Reserved<div>
     </div>
     <script src="challenges.js"></script>
 </body>

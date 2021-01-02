@@ -87,6 +87,7 @@
             }
         }
         let output = {}
+        let arr;
         function getData(){
             let calories = (data.weight - data.desired_weight) * 7700
             let weight_loss = data.weight - data.desired_weight;
@@ -96,14 +97,28 @@
             } else {
                 current_calorie = data.weight * 11 * 2.204
             }
-            let burn_calorie = 2100 - current_calorie;
+            let burn_calorie = 2100 - Math.floor(current_calorie);
             let days_required = Math.floor(calories / burn_calorie)
             output.calories = Math.floor(calories);
             output.current_calorie = Math.floor(current_calorie);
             output.days_required = days_required
             output.weight_loss = Math.floor(weight_loss)
+            output.weight = data.weight
             input_box_four.style.display ="none"
 
+            
+            let cart = JSON.parse(localStorage.getItem("weight"))
+            if(arr == undefined){
+                arr = []
+            }
+            if(cart == null){
+                arr = []
+                arr.push(output)
+            } else {
+                console.log(arr)
+                arr.push(output)
+            }
+            localStorage.setItem("weight", JSON.stringify(arr))
             div()
         }
         
@@ -123,7 +138,7 @@
             let para_one = document.createElement("p")
             para_one.innerHTML = "Daily calorie budget:"
             let head_one = document.createElement("h2")
-            head_one.innerHTML = output.current_calorie * .7
+            head_one.innerHTML = Math.floor(output.current_calorie * .7)
             div_one.appendChild(para_one)
             div_one.appendChild(head_one)
             child_div_one.appendChild(image_one)
