@@ -62,7 +62,7 @@ nav {
     max-height: 1200px;
 }
 .left {
-    width: 35%;
+    width: 42%;
     /* height: fit-content; */
     margin: 40px;
 }
@@ -134,8 +134,9 @@ nav {
 }
 .left__container__header {
     display: flex;
+    text-align: center;
     color: rgb(116, 116, 116);
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .left__container__header > h6  {
     margin: 3px;
@@ -143,7 +144,7 @@ nav {
 .left__container__header__value {
     display: flex;
     color: black;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #header__value__selected {
     color: white;
@@ -181,10 +182,10 @@ nav {
 }
 .left__container__food__box {
     width: 96%;
-    height: 70px;
+    min-height: 70px;
     background-color: white;
     padding: 10px; 
-    overflow: auto;
+    height: fit-content;
 }
 .left__container__food__box > p{
     color: rgb(175, 174, 174);
@@ -193,7 +194,7 @@ nav {
     font-weight: bold;
 }
 .right {
-    width: 22%;
+    width: 25%;
     margin: 40px;
 }
 .right__data {
@@ -226,10 +227,6 @@ nav {
 }
 #my__day {
     color: #2C479B;
-}
-.right__data__result {
-    display: flex;
-    flex-direction: column;
 }
 .graph {
     width: 100%;
@@ -292,14 +289,14 @@ nav {
 .right__data__result {
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: fit-content;
 }
 
-.right__data__bottom__left > img {
-    width: 20px;
+.right__data__bottom__left > p{
     float: left;
-    margin-top: 20px;
+    color: #008000;
+    margin-top: 7px;
 }
 .right__data__bottom__left > h3 {
     color: #008000;
@@ -547,10 +544,6 @@ nav {
 .pop_up table tr th,.pop_up table tr td{
     padding: 10px 25px;
 }
-.table_row{
-    font-size: 12px;
-    align-items: center;
-}
 .table_row span{
     margin-left: 8px;
 }
@@ -558,6 +551,9 @@ nav {
     border: 2px solid grey;
     border-radius: 5%;
     background-color: rgb(243, 243, 243);
+}
+.table_row{
+    margin: 5px 0;
 }
 .dropdown_button{
     font-size: 12px;
@@ -627,8 +623,10 @@ nav {
     color: red;
 }
 .input_content td{
+    font-weight: bolder;
+    font-size: 13px;
     min-width: 50px;
-    padding: 2px 20px;
+    padding: 2px 35px;
 }
 .input_content:hover{
     background-color: white;
@@ -644,4 +642,7 @@ textarea:hover{
 }
 .share{
     display: none;
+}
+.close_btn{
+    float: right;
 }

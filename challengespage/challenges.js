@@ -26,17 +26,17 @@ function setrecchall () {
         var div = document.getElementById("recom");
     var html = "";
     for (var i = 0; i < items.length; i++) {
-        html += `<div style = "display: flex;padding:10px;align-items: center;  border-bottom: solid 0.5px #f0f0f0; margin-top:10px;">
+        html += `<div style = "display: flex;padding:10px;align-items: center;  border-bottom: solid 0.5px #f0f0f0; margin-top:10px;background-color:white">
                         <div >
                             <img src="${items[i].img}"/>
                         </div>
-                        <div style= "margin-left: 20px">
-                            <span  style = "font-size: 15px; font-weight: bold;">${items[i].name} </span>
+                        <div id= "main_card"style= "margin-left: 20px; width:80%">
+                            <span  style = "font-size: 13px; font-weight: bolder;">${items[i].name} </span>
                             <br/>
                             <span style = "font-size: 11px;">${items[i].desc}</span>
                         </div>
                         <div>
-                            <button class = "removeitem" onClick="deletex(${i})" >X</button>
+                            <button class = "removeitem" id= "removeI"onClick="deletex(${i})" ><i class="fa fa-times-circle fa-lg" aria-hidden="true" ></i></button>
                         </div> 
                     </div>`
     }
@@ -88,16 +88,14 @@ function challenges () {
     var div2 = document.getElementById("popular");
     var html2 = "";
     for (var i = 0; i < items2.length;i++) {
-        html2 += ` <div style = "display: flex; padding:5px; align-items: center; border-bottom: solid 0.5px #f0f0f0; margin-top:10px;">
-                       <div>
+        html2 += ` <div class = "right_cards">
+                       <div class = "card_img">
                            <img src="${items2[i].img1}" style = "margin-left: 10px; margin-top: 10px; width:40px;height:60px"/>
                        </div>
-                       <div style = "margin-left:5px; align-items: center;" >
-                            <span style = "font-weight:bold; margin-left:10px; margin-top:10px;">${items2[i].name1}<span>
-                            <br/>
-                            <span style="font-size:11px; margin-left:10px">${items2[i].desc1}</span>
-                            <br/>
-                            <a href="" style = "margin-left:10px; font-size:10px;">${items2[i].dese2}</a>
+                       <div class = "card_div" >
+                            <h5>${items2[i].name1}</h5>
+                            <p>${items2[i].desc1}</p>
+                            <p class ="color_blue">${items2[i].dese2}</p>
                        </div>
                    </div>`
     }

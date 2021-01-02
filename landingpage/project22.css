@@ -55,12 +55,13 @@ a {
 .img2 {
     width: 15%;
     padding: 40px;
-    
+    margin-top: 80px;
 }
 .sidebox0 {
     width: 500px;
     height: 400px;
     padding: 40px; 
+    margin-top: 80px;
 }
 .mobile {
     width: fit-content;

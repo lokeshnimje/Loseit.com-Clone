@@ -216,7 +216,7 @@ function displayFoodItems(){
     })
 
     document.getElementById("remove_all_exercise").addEventListener("click", function(){
-        localStorage.removeItem("exercise_list")
+        localStorage.removeItem("exercise_cart")
 
     })
 
