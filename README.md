@@ -1,7 +1,83 @@
 # Silicon
-cloning of "Loseit.com" website, using HTML, CSS, JavaScript.
+# Cloned "loseit.com".
+**Loseit.com** is a web-application which is used to track daily Calorie count and helps you to loose weight.
+
+ ## Tech Stacks Used:
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **ES6**
+   
+- NOTE: Most of our pages are dynamic, and we stored some data in local storage which can be accesible by user and also  allows the user to create his custom data which got stored in local storage.
+
+### Walkthrough to the project:
+1. 	Open index.html file on your browser
+    <img src="">;
+2.  This is the landing page which gives you the overview of website, and most of the part of this page are static. 
+    <img src="">;
+3.  To proceed further user need to click "Sign up for free" or "Login" button.
+    <img src="">;
+4.  When user try to login, first he will come to this page, if he click on "Yes" he will directly redirect to home page    (User's Dashboard) of the application, and if he click "No" he will move to next page to calculate Calorie.
+    <img src="">;
+5.  In this page user is asked to enter his weight in pounds or kg, and also user enters the "Goal weight" which he want to achive. If the user kept any of the input field empty he will not be able to proceed further.
+    <img src="">;
+6.  In this page user has to enter his height in cm or m.
+    <img src="">;
+7.  In this page user has to select his SEX (male / female).
+    <img src="">;
+8.  In this page user need to enter his date of birth and click on continue.
+    <img src="">;
+9.  In this page, Whatever the input user has given in previous pages, according to that he will get the calorie count and how much calorie he need to loose to achive his required goal weight and how much time is required.  
+once the user click on "Home" button he will redirect to his dashboard.
+    <img src="">;
+10. This is the user's dashboard where he can add some food in breakfast, lunch, dinner by clicking on "Add Food" button or by searching in search bar, he will get the details of food and calorie count of that food. We have already added some list of food in our local storage so user can select from that list.
+    <img src="">;
+11. In the same way user can also select Exercise by clicking "Add Exercise" button or by searching in search bar, he will get details of all exercises with calories burned on that particular exercises, we have already added list of exercises  in local storage.
+    <img src="">;
+12. According to calorie intake via Food and calorie burned through exercise user can see his Net calorie count of the day.
+    <img src="">;
+13. In the meanwhile User can also track how much weight he lost or gained by entering current weight in box.
+    <img src="">;
+14. user can also write comment if he wants. and also toggle to different sections to connect with friends or any groups.
+    <img src="">;
+15. This is the Community page where user can see all the comments and at the same time he can add or delete some comments.
+    <img src="">;
+16. User can also add his friend by clicking "Add Friend" link, it will redirect to user's Facebook page.
+    <img src="">;
+17. This is the Challenge page where user can see all the recommended challenges and Find some challenges by entering keyword in search bar.
+    <img src="">;
+18. This is the Setting page of application where user can see his food in "My Food"  section and sort his food  alphabatecally and also delete some food if he wants. whatever the action user perform here will be reflected to his dashboard.
+    <img src="">;
+19. In the same way user can see his added Exercise in "My Exercise"  section and perform same operation.
+    <img src="">;
+20. User can also add his new custom food or Exercise in "Custom Food" or "Custom Exercise" section of the page.
+Whatever the user can add will be stored in local storage of system.
+    <img src="">;
+21. User can click "Sign Out" link to sign out from the application.
+
+<br> 
+
+## End Notes
+- In this project we cloned most of the dynamic part of website and we achive near to perfect results, and few of the   pages we left static. 
 
 
 
-    
-data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAABaElEQVR42u2Rr0vFUBTHn/pQlC0MNt3c3fvlMzgN8opBw2BgeUEEweY/4F9hEWw2gyhosVgsFovFILxgMFgMWiwWi2CQ476y89jmvF6uTTzwYd977j3fL4dVKn+xqglmgvVLzNSrtEx62COwu71BuhqkQaVlvffWCaxEFdLVIN2oPOTtepUAhnQ1kIa8XnUJYIh1FtW+NOTlMiaAIdZZVPvSkOeLRQIYYp1FtS8NeTrvEMAQaxWK76Uhj2czBDDEWgdpyP1pkwBC+MvwnQrfhQwYhjF+d+ISgCnrsvNPwAueuYQwDId9vzF/e2wRgCnrnc0ROthq988qwAueuS3CMDL8eqt7czhGACGs1+JEHzn9swrwgmduG6QGwdRcb79KACGsdYBXcZPPbYQQo7Zte44jpl23Nmt79c6EaCx4Xm1JiHbk+614MmguA2j0cIc3eIsZzMIDXl/+STYsw2CBoQLF++zsf+nXBybTeJDR9rVRAAAAAElFTkSuQmCC
+## Team Members and Contributors
+
+ 👤 **Lokesh Nimje**
+
+- Github: [lokeshnimje](https://github.com/lokeshnimje)
+- Linkedin: [Lokesh Nimje](https://www.linkedin.com/in/lokesh-nimje-46841ba9/)
+- Email: lokesh.nimje@gmail.com
+ 
+  👤 **Ashish Bhagat**
+  
+- Github: [ashishbhagat123]()
+- Linkedin: 
+- Email: 
+
+ 👤 **K V Mohan Reddy**
+
+- Github: [kristipati123]()
+- Linkedin: 
+- Email: 
