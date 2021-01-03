@@ -138,7 +138,7 @@
             let para_one = document.createElement("p")
             para_one.innerHTML = "Daily calorie budget:"
             let head_one = document.createElement("h2")
-            head_one.innerHTML = Math.floor(output.current_calorie * .7)
+            head_one.innerHTML = Math.floor(output.current_calorie)
             div_one.appendChild(para_one)
             div_one.appendChild(head_one)
             child_div_one.appendChild(image_one)
@@ -187,11 +187,11 @@
             div_four.appendChild(head_four)
             child_div_four.appendChild(image_four)
             child_div_four.appendChild(div_four)
-
+            
             let btn = document.createElement("a")
             btn.innerHTML = "Home"
             btn.setAttribute("class", "btn_input")
-            btn.setAttribute("href", "../Home_page/index.html")
+            btn.setAttribute("href", "../html/homepage.html")
 
             div.appendChild(header)
             div.appendChild(child_div_one)
