@@ -1,6 +1,6 @@
 # Silicon
 # Cloned "loseit.com".
-"Loseit.com" is a web-application which is used to track daily Calorie count and helps you to loose weight.
+**Loseit.com** is a web-application which is used to track daily Calorie count and helps you to loose weight.
 
  ## Tech Stacks Used:
 - **HTML**
@@ -77,7 +77,7 @@ Whatever the user can add will be stored in local storage of system.
 - Email: 
 
  👤 **K V Mohan Reddy**
- 
+
 - Github: [kristipati123]()
 - Linkedin: 
 - Email: 
