@@ -325,35 +325,11 @@ document.getElementById("enter_breakfast").addEventListener("keyup", function(ev
         
     }
          table.innerHTML = search_data
+         document.getElementById("input_breakfast").value = ""
 
     }
     refreshPage()
 })
-
-// document.getElementById("my_food").addEventListener("click", function(){
-//     let cart = JSON.parse(localStorage.getItem("breakfast_cart"))
-//     console.log(cart.length)
-//     let my_breakfast = "";
-//     for (i in cart){
-//         if (cart.length != 0){
-//             my_breakfast += ` <tr class = "table_row">
-//                         <td style = "padding-right:2px"><img src =${cart[i].img} /></td>
-//                         <td style = "padding-left:0; color:#114d82" >${cart[i].name}</td>
-//                         <td>${cart[i].calories} cal</td>
-//                         <td>${cart[i].protein} g</td>
-//                         <td><button onclick = addFood(${id}) class = "close_btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button> 
-//                         </tr>` 
-//         } else {
-//             my_breakfast = "Cart is empty"
-//             console.log("working")
-//         }
-//     }
-    
-//     table.innerHTML = my_breakfast
-// })
-
-
-// js for Lunch menu
 
 document.getElementById("find_all_lunch").addEventListener("click", function(){
     let data = JSON.parse(localStorage.getItem("lunchs"))
@@ -879,7 +855,7 @@ refreshPage()
 function calorie(){
     let data = JSON.parse(localStorage.getItem("weight"))
     calorie_budget = data[0].current_calorie
-    document.getElementById("calorie_para").innerHTML = calorie_budget
+    document.getElementById("calorie_paraa").innerHTML = calorie_budget
     document.getElementById("header__value__selected").innerHTML = calorie_budget
     document.getElementById("calorie_para").innerHTML = calorie_budget
 }
