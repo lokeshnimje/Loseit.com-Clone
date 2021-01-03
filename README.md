@@ -28,15 +28,15 @@ Note:- User needs to provide some data like weight, height etc in order to get t
     <img src="./image/DOB.JPG">;
 9.  In this page, Whatever the input user has given in previous pages, according to that he will get the calorie count and how much calorie he need to loose to achive his required goal weight and how much time is required.  
 once the user click on "Home" button he will redirect to his dashboard.
-    <img src="./image/calorie data.JPG">;
+    <img src="./image/calorie_count.JPG">;
 10. This is the user's dashboard where he can add some food in breakfast, lunch, dinner by clicking on "Add Food" button or by searching in search bar, he will get the details of food and calorie count of that food. We have already added some list of food in our local storage so user can select from that list.
-    <img src="./image/DashBoard.JPG">;
+    <img src="./image/Dashboard.JPG">;
 11. In the same way user can also select Exercise by clicking "Add Exercise" button or by searching in search bar, he will get details of all exercises with calories burned on that particular exercises, we have already added list of exercises  in local storage.
     <img src="./image/exercise.JPG">;
 12. According to calorie intake via Food and calorie burned through exercise user can see his Net calorie count of the day.
-    <img src="./image/calorie data.JPG">;
+    <img src="./image/calorie_data.JPG">;
 13. In the meanwhile User can also track how much weight he lost or gained by entering current weight in box.
-    <img src="./image/weight data.JPG">;
+    <img src="./image/weight_data.JPG">;
 14. user can also write comment if he wants. and also toggle to different sections to connect with friends or any groups.
     <img src="./image/Post.JPG">;
 15. This is the Community page where user can see all the comments and at the same time he can add or delete some comments.
@@ -47,7 +47,7 @@ once the user click on "Home" button he will redirect to his dashboard.
 18. This is the Setting page of application where user can see his food in "My Food"  section and sort his food  alphabatecally and also delete some food if he wants. whatever the action user perform here will be reflected to his dashboard.
     <img src="./image/Settings.JPG">;
 19. In the same way user can see his added Exercise in "My Exercise"  section and perform same operation.
-    <img src="./image/setting exercise.JPG">;
+    <img src="./image/setting_exercise.JPG">;
 20. User can click "Sign Out" link to sign out from the application.
 
 <br> 
