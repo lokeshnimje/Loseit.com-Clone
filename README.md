@@ -73,6 +73,6 @@ once the user click on "Home" button he will redirect to his dashboard.
 
  👤 **K V Mohan Reddy**
 
-- Github: [kristipati123]
-- Linkedin: 
-- Email: 
+- Github: [kristipati123](https://github.com/kristipati123)
+- Linkedin: [k V Mohan reddy](k.mohanreddy95@gmail.com)
+- Email: k.mohanreddy95@gmail.com
