@@ -1,3 +1,4 @@
+// breakfast data
 function callInput(){
     let break_obj = []
     let poha = {
@@ -36,6 +37,7 @@ localStorage.setItem("breakfasts", JSON.stringify(break_obj))
 }
 callInput()
 
+// lunch data
 function callLunch(){
     let lunch = []
    let rice = { 
@@ -98,6 +100,7 @@ localStorage.setItem("lunchs", JSON.stringify(lunch))
 }
 callLunch()
 
+// dinner data
 function callDinner(){
     let dinner = []
    let rice = { 
@@ -160,6 +163,7 @@ localStorage.setItem("dinner", JSON.stringify(dinner))
 }
 callDinner()
 
+// exercise data
 function callExercise(){
     let running = {
         id : 0,

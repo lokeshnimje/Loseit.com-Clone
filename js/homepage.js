@@ -4,7 +4,7 @@ let friends = document.getElementById("friends")
 let challenges = document.getElementById("challenges");
 let groups = document.getElementById("groups")
 
-
+// display friends div on right bottom comment area
 friends.addEventListener('click', friendsDiv)
 function friendsDiv(e){
     e.preventDefault()
@@ -18,7 +18,7 @@ function friendsDiv(e){
     addGroups.style.display = "none"
     addChallenges.style.display = "none"
 }
-
+// display challanges div on right bottom comment area
 challenges.addEventListener('click', challengesDiv)
 function challengesDiv(e){
     e.preventDefault()
@@ -32,7 +32,7 @@ function challengesDiv(e){
     addChallenges.style.backgroundColor= "white"
     addChallenges.style.display = "block"
 }
-
+// display Groups div on right bottom comment area
 groups.addEventListener('click', groupsDiv)
 function groupsDiv(e){
     e.preventDefault()
@@ -47,11 +47,13 @@ function groupsDiv(e){
     addGroups.style.backgroundColor= "white"
 }
 
+// working of comment box
 showTask();
 
 var addTaskInput = document.getElementById("textarea");
 var addTaskButton = document.getElementById("share");
 
+// adding comment and storing in local storage
 addTaskButton.addEventListener("click", function(){
     var addTaskInputValue = addTaskInput.value;
     if (addTaskInputValue.trim()){
@@ -69,10 +71,12 @@ addTaskButton.addEventListener("click", function(){
     showTask();
 });
 
+// display show button on click of text area
 document.getElementById("textarea").addEventListener("click", function(){
     document.getElementById("share").style.display = "block"
 })
 
+// show tasks after adding tasks
 function showTask() {
     var task = localStorage.getItem("localtask");
     if (task == null){
@@ -91,6 +95,8 @@ function showTask() {
     })
     taskList.innerHTML = html;
 }
+
+// delete tasks
 function deletItem(index){
     var task = localStorage.getItem("localtask");
     var taskObj = JSON.parse(task);
@@ -98,6 +104,7 @@ function deletItem(index){
     localStorage.setItem("localtask", JSON.stringify(taskObj));
     showTask();
 }
+// right side comment section ends here
 
 // right day-week-nutrient result box;
 
@@ -105,6 +112,7 @@ let day = document.getElementById("my__day");
 let week = document.getElementById("my__week");
 let nutrient = document.getElementById("my__nutrients");
 
+// my nuterient section
 nutrient.addEventListener('click', nutrientdiv)
 function nutrientdiv(e){
     e.preventDefault()
@@ -116,6 +124,7 @@ function nutrientdiv(e){
     right__data__week.style.display = "none"
 }
 
+// week section
 week.addEventListener('click', weekdiv)
 function weekdiv(e){
     e.preventDefault()
@@ -127,6 +136,7 @@ function weekdiv(e){
     right__data__week.style.display = "block"
 }
 
+// add food button 
 document.getElementById("foodType").addEventListener("click", function(){
 let display = document.getElementById("dropdown__food").style.display
 let display_state
@@ -138,11 +148,15 @@ if(display == "none"){
 document.getElementById("dropdown__food").style.display = display_state
 })
 
+// close pop up
 document.getElementById("close").addEventListener("click", function(){
     popup.style.display = "none"
 })
+
 let table = document.getElementById("table")
 let popup = document.getElementById("pop_up")
+
+// breakfast list on add food button
 document.getElementById("breakfast_list").addEventListener("click", function(){
     popup.style.display = "block"
     document.getElementById("find_all_breakfast").style.display = "block"
@@ -156,6 +170,7 @@ document.getElementById("breakfast_list").addEventListener("click", function(){
     table.innerHTML = ""
 })
 
+// lunch list on add food button
 document.getElementById("lunch_list").addEventListener("click", function(){
     popup.style.display = "block"
     document.getElementById("find_all_lunch").style.display = "block"
@@ -169,6 +184,7 @@ document.getElementById("lunch_list").addEventListener("click", function(){
     table.innerHTML = ""
 })
 
+// Dinner list on add food button
 document.getElementById("dinner_list").addEventListener("click", function(){
     popup.style.display = "block"
     document.getElementById("find_all_dinner").style.display = "block"
@@ -183,12 +199,12 @@ document.getElementById("dinner_list").addEventListener("click", function(){
 })
 
 // for breakfast 
-
+// find all breakfast button on breakfast list
 document.getElementById("find_all_breakfast").addEventListener("click", addBreakfast)
 
 
 let break_obj = []
-
+// fetching breakfast item in pop up window from local storage 
 function addBreakfast(){
     let data = JSON.parse(localStorage.getItem("breakfasts"))
     let break_data = ""
@@ -208,7 +224,7 @@ function addBreakfast(){
 }
 let arr = []
 let out = ""
-
+// fetching breakfast items on dashboard
 function breakfast_list_item(){
     let cart = JSON.parse(localStorage.getItem("breakfast_cart"))
     document.getElementById("breakfast_count").innerHTML =""
@@ -236,6 +252,7 @@ function breakfast_list_item(){
 }
 breakfast_list_item()
 
+// adding breakfast from pop up
 function addFood(id){
     let data = JSON.parse(localStorage.getItem("breakfasts"))
 
@@ -270,6 +287,7 @@ function addFood(id){
     refreshPage()
 }
 
+// deleting the breakfast item
 function deleteItem(id){
     let cart = JSON.parse(localStorage.getItem("breakfast_cart"))
     cart.splice(id,1)
@@ -278,9 +296,9 @@ function deleteItem(id){
     location.reload()
 }
 
+// searching the breakfast 
 document.getElementById("search_breakfast").addEventListener("click", function(){
     let value = document.getElementById("input_breakfast").value
-    console.log(value)
     let cart = JSON.parse(localStorage.getItem("breakfasts"))
     let search_data = ""
     for (i in cart){
@@ -303,6 +321,7 @@ document.getElementById("search_breakfast").addEventListener("click", function()
          refreshPage()
 })
 
+// searching the breakfast item from dashboard on enter keypress
 document.getElementById("enter_breakfast").addEventListener("keyup", function(event){
     if(event.keyCode == 13){
         popup.style.display = "block"
@@ -331,6 +350,7 @@ document.getElementById("enter_breakfast").addEventListener("keyup", function(ev
     refreshPage()
 })
 
+// find all lunch button on pop up
 document.getElementById("find_all_lunch").addEventListener("click", function(){
     let data = JSON.parse(localStorage.getItem("lunchs"))
     let lunch_data = ""
@@ -341,7 +361,7 @@ document.getElementById("find_all_lunch").addEventListener("click", function(){
                         <td>${data[i].calories} cal</td>
                         <td>${data[i].protein} g</td>
                         <td><button onclick = addLunch(${data[i].id}) class = "close_btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button> 
-                        </tr>
+                        ></tr>
                       `       
     }
     table.innerHTML = lunch_data
@@ -350,6 +370,7 @@ document.getElementById("find_all_lunch").addEventListener("click", function(){
 
 let lunch_item = []
 let lunch_out = ""
+// adding lunch from pop up
 function addLunch(id){
     
     let data = JSON.parse(localStorage.getItem("lunchs"))
@@ -384,7 +405,7 @@ function addLunch(id){
     document.getElementById("lunch_table").innerHTML = lunch_out
     refreshPage()
 }
-
+// display lunch on dashboard
 function lunch_list_item(){
     let cart = JSON.parse(localStorage.getItem("lunch_cart"))
   
@@ -409,7 +430,8 @@ function lunch_list_item(){
     refreshPage()
 }
 lunch_list_item()
-
+ 
+// delete lunch item from dashboard
 function deleteLunchItem(id){
     let cart = JSON.parse(localStorage.getItem("lunch_cart"))
     cart.splice(id,1)
@@ -418,7 +440,7 @@ function deleteLunchItem(id){
     location.reload()
 }
 
-
+// search lunch from popup
 document.getElementById("search_lunch").addEventListener("click", function(){
     let value = document.getElementById("input_breakfast").value
     let cart = JSON.parse(localStorage.getItem("lunchs"))
@@ -442,6 +464,7 @@ document.getElementById("search_lunch").addEventListener("click", function(){
          refreshPage()
 })
 
+// search lunch from dashbard on enter keypress
 document.getElementById("enter_lunch").addEventListener("keyup", function(event){
     if(event.keyCode == 13){
         popup.style.display = "block"
@@ -471,6 +494,7 @@ document.getElementById("enter_lunch").addEventListener("keyup", function(event)
 
 // js for dinner menu
 
+// find all dinner button on dashboard
 document.getElementById("find_all_dinner").addEventListener("click", function(){
     
     let data = JSON.parse(localStorage.getItem("dinner"))
@@ -491,6 +515,8 @@ document.getElementById("find_all_dinner").addEventListener("click", function(){
 
 let dinner_arr = []
 let dinner_out = ""
+
+// add dinner from popup
 function addDinner(id){
     let data = JSON.parse(localStorage.getItem("dinner"))
 
@@ -524,6 +550,7 @@ function addDinner(id){
     refreshPage()
 }
 
+// show dinner item on dashboard
 function dinner_list_item(){
     let cart = JSON.parse(localStorage.getItem("dinner_cart"))
   
@@ -549,6 +576,7 @@ function dinner_list_item(){
 }
 dinner_list_item()
 
+// delete dinner item from dashboard
 function deleteDinnerItem(id){
     let cart = JSON.parse(localStorage.getItem("dinner_cart"))
     cart.splice(id,1)
@@ -557,7 +585,7 @@ function deleteDinnerItem(id){
     location.reload()
 }
 
-
+// search dinner from popup
 document.getElementById("search_dinner").addEventListener("click", function(){
     let value = document.getElementById("input_breakfast").value
     let cart = JSON.parse(localStorage.getItem("dinner"))
@@ -581,6 +609,7 @@ document.getElementById("search_dinner").addEventListener("click", function(){
          refreshPage()
 })
 
+// search dinner from dashboard on enter keypress
 document.getElementById("enter_dinner").addEventListener("keyup", function(event){
     if(event.keyCode == 13){
         popup.style.display = "block"
@@ -610,7 +639,6 @@ document.getElementById("enter_dinner").addEventListener("keyup", function(event
 
 // Exercise Button
 
-
 document.getElementById("exercise_btn").addEventListener("click", function(){
     popup.style.display = "block"
     document.getElementById("find_all_breakfast").style.display = 'none'
@@ -623,6 +651,7 @@ document.getElementById("exercise_btn").addEventListener("click", function(){
     table.innerHTML = ""
 })
 
+// find all exercise button on popup
 document.getElementById("find_all_exercise").addEventListener("click", function(){
     let data = JSON.parse(localStorage.getItem("exercises"))
     let exercise_data = ""
@@ -642,6 +671,8 @@ document.getElementById("find_all_exercise").addEventListener("click", function(
 
 let exercise_arr = []
 let exercise_out = ""
+
+// add exercise from popup
 function addExercise(id){
     
     let data = JSON.parse(localStorage.getItem("exercises"))
@@ -676,6 +707,7 @@ function addExercise(id){
     refreshPage()
 }
 
+// show exercise on dashboard
 function exercise_list_item(){
     let cart = JSON.parse(localStorage.getItem("exercise_cart"))
   
@@ -701,6 +733,7 @@ function exercise_list_item(){
 }
 exercise_list_item()
 
+// delete exercise from dashboard
 function deleteExerciseItem(id){
     let cart = JSON.parse(localStorage.getItem("exercise_cart"))
     cart.splice(id,1)
@@ -709,7 +742,7 @@ function deleteExerciseItem(id){
     location.reload()
 }
 
-
+// search exercise from popup
 document.getElementById("search_exercise").addEventListener("click", function(){
     let value = document.getElementById("input_breakfast").value
     let cart = JSON.parse(localStorage.getItem("exercises"))
@@ -735,6 +768,7 @@ document.getElementById("search_exercise").addEventListener("click", function(){
          document.getElementById("input_breakfast").value = ""
 })
 
+// search exercise from dashboard on enter keypress
 document.getElementById("enter_exercise").addEventListener("keyup", function(event){
     if(event.keyCode == 13){
         popup.style.display = "block"
@@ -767,6 +801,7 @@ document.getElementById("enter_exercise").addEventListener("keyup", function(eve
 let calorie_budget;
 function refreshPage(){
 
+// display count of breakfast item
 function displayBreakfastCount(){
     let cart = JSON.parse(localStorage.getItem("breakfast_cart"))
     if(cart == null){
@@ -776,7 +811,7 @@ function displayBreakfastCount(){
     }
 }
 displayBreakfastCount()
-
+// display count of lunch item
 function displayLunchCount(){
     let cart = JSON.parse(localStorage.getItem("lunch_cart"))
     if (cart == null){
@@ -786,7 +821,7 @@ function displayLunchCount(){
     }
 }
 displayLunchCount()
-
+// display count of dinner item
 function displayDinnerCount(){
     let cart = JSON.parse(localStorage.getItem("dinner_cart"))
     if(cart == null){
@@ -798,6 +833,7 @@ function displayDinnerCount(){
 }
 displayDinnerCount()
 
+// display count exercise item
 function displayExerciseCount(){
     let cart = JSON.parse(localStorage.getItem("exercise_cart"))
     if(cart == null){
@@ -809,6 +845,7 @@ function displayExerciseCount(){
 }
 displayExerciseCount()
 
+// display total calories
 function totalCalories(){
     let sum = 0;
     let breakfast = JSON.parse(localStorage.getItem("breakfast_cart"))
@@ -829,6 +866,7 @@ function totalCalories(){
 }
 totalCalories()
 
+// display total exercises
 function totalExercise(){
     let diff = 0
     let cart = JSON.parse(localStorage.getItem("exercise_cart"))
@@ -840,6 +878,7 @@ function totalExercise(){
 }
 totalExercise()
 
+// display net count
 function netCount(){
     let food = document.getElementById("total_cal").innerHTML
     let exercise = document.getElementById("total_exer").innerHTML
@@ -851,7 +890,7 @@ netCount()
 
 
 refreshPage()
-
+// calorie budget on dashboard
 function calorie(){
     let data = JSON.parse(localStorage.getItem("weight"))
     calorie_budget = data[0].current_calorie
@@ -861,6 +900,7 @@ function calorie(){
 }
 calorie()
 
+// reacord weight and compare with previous weights
 document.getElementById("record_weight").addEventListener("click", function(){
     let weight = document.getElementById("weight").value
     let prev_weight = JSON.parse(localStorage.getItem("weight"))

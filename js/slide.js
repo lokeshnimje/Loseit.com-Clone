@@ -1,3 +1,4 @@
+// slider for landing page
 var preindx = 1;
 function slide (slideIndex) {
     debugger;

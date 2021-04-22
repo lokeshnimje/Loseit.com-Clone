@@ -1,9 +1,11 @@
 window.addEventListener('load', showTask)
 showTask();
 
+
 var addTaskInput = document.getElementById("input");
 var addTaskButton = document.getElementById("share");
 
+// add task 
 addTaskButton.addEventListener("click", function(){
     var addTaskInputValue = addTaskInput.value;
     if (addTaskInputValue.trim()){
@@ -20,6 +22,7 @@ addTaskButton.addEventListener("click", function(){
     showTask();
 });
 
+// show all task
 function showTask() {
     var task = localStorage.getItem("localtask");
     if (task == null){
@@ -38,6 +41,8 @@ function showTask() {
     })
     taskList.innerHTML = html;
 }
+
+// delete task
 function deletItem(index){
     var task = localStorage.getItem("localtask");
     var taskObj = JSON.parse(task);
@@ -46,6 +51,7 @@ function deletItem(index){
     showTask();
 }
 
+// left sidebar handling
 let invitation = document.getElementById("invitation__menu")
 let invitation_tag = document.getElementById("invitation")
 let notification = document.getElementById("notification__menu")

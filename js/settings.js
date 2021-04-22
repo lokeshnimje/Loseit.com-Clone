@@ -30,6 +30,7 @@ custom_exercise_divs.style.display = "none"
 custom_exercise_btn.style.background = "transparent"
 custom_exercise_btn.style.color = "black"
 
+// display my food section
 function displayFoodItems(){
     my_exercise_divs.style.display = "none"
     my_exercise_btn.style.background = "transparent"
@@ -82,7 +83,7 @@ function displayFoodItems(){
 } 
 }
     let update_arr = []
-
+    // add all breakfast, lunch and dinner item and show in my food page
     function calc(id){
         let breakfast = JSON.parse(localStorage.getItem("breakfast_cart"))
         let lunch = JSON.parse(localStorage.getItem("lunch_cart"))
@@ -107,17 +108,20 @@ function displayFoodItems(){
           localStorage.setItem("dinner_cart", JSON.stringify(dinner))
     }
 
+    // remove all food from list
     document.getElementById("remove_all").addEventListener("click", function(){
         document.getElementById("my_food_table").innerHTML = ""
         displayFoodItems()
     })
 
+    // Select all food from list
     document.getElementById("select_all_food").addEventListener("click", function(){
         localStorage.removeItem("breakfast_cart")
         localStorage.removeItem("lunch_cart")
         localStorage.removeItem("dinner_cart")
     })
 
+    // sort food list callaback function
     function string_sort(str) { 
         var i = 0, j; 
         while (i < str.length) { 
@@ -134,12 +138,13 @@ function displayFoodItems(){
         } 
     } 
 
+    // sorting food list
     document.getElementById("sort_all").addEventListener("click", function(){
         const sorted = string_sort(arr)
         let new_arr = arr
         document.getElementById("my_food_table").innerHTML = ""
         let str = "";
-        let calories;
+        let calories
         for (i in new_arr){
         calories = new_arr[i].calories;
         if(calories == undefined){
@@ -158,6 +163,7 @@ function displayFoodItems(){
 
     // My Exercises
     let exer;
+    // display exercise
     document.getElementById("my_exercise").addEventListener("click", displayExercise)
     
         function displayExercise(){
@@ -199,6 +205,7 @@ function displayFoodItems(){
     } 
     }
 
+    // delete exercise
     function delExer(id){
         let exercise = JSON.parse(localStorage.getItem("exercise_cart"))
         for (i in exercise){
@@ -209,17 +216,18 @@ function displayFoodItems(){
         }
           localStorage.setItem("exercise_cart", JSON.stringify(exercise))
     }
-
+    // remove single exercise button
     document.getElementById("remove_exercise").addEventListener("click", function(){
         document.getElementById("my_exercise_table").innerHTML = ""
         displayExercise()
     })
-
+    // remove all exercise button
     document.getElementById("remove_all_exercise").addEventListener("click", function(){
         localStorage.removeItem("exercise_cart")
 
     })
 
+    // sorting exercise
     document.getElementById("sort_exercise").addEventListener("click", function(){
         const sorted_exercise = string_sort(exer)
         let new_exer = exer
@@ -237,7 +245,7 @@ function displayFoodItems(){
         document.getElementById("my_exercise_table").innerHTML = str
     })
 
-/// Custom Foods
+/// Dispaly Custom Foods section
 
 document.getElementById("My_custom_foods").addEventListener("click", createCustomFood)
 
@@ -260,26 +268,31 @@ function createCustomFood(){
     custom_exercise_btn.style.color = "black"
 }
 
+// new food tab popup
 document.getElementById("new_food_tab").addEventListener("click", function(){
     document.getElementById("pop_up_food").style.display = "block"
 })
 
+// button to close new food tab
 document.getElementById("cross").addEventListener("click", function(){
     document.getElementById("pop_up_food").style.display = "none"
 })
 
+// button to submit food
 document.getElementById("submit_food").addEventListener("click", function(){
     document.getElementById("pop_up_food").style.display = "none"
 })
 
+//button to close new exercise popup
 document.getElementById("cross_exe").addEventListener("click", function(){
     document.getElementById("pop_up_exercise").style.display = "none"
 })
+// button to submit exercise
 document.getElementById("submit_exercise").addEventListener("click", function(){
     document.getElementById("pop_up_exercise").style.display = "none"
 })
 
-// Custom Exercise
+// Display Custom Exercise
 
 custom_exercise_btn.addEventListener("click", function(){
     custom_exercise_divs.style.display = "block"
@@ -299,6 +312,7 @@ custom_exercise_btn.addEventListener("click", function(){
     custom_foods_btn.style.color = "black"
 })
 
+// button to open new exercise tab
 document.getElementById("new_exercise_tab").addEventListener("click", function(){
     document.getElementById("pop_up_exercise").style.display = "block"
 })

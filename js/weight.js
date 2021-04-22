@@ -1,9 +1,11 @@
+        // adding listeners to buttons  
         document.getElementById("weight_input").addEventListener("click", addWeight)
         document.getElementById("height_input").addEventListener("click", addHeight)
         document.getElementById("female").addEventListener("click", femaleData)
         document.getElementById("male").addEventListener("click", maleData)
         document.getElementById("birthday_input").addEventListener("click", addBirth)
-
+        
+        // gettings div sections for different area
         let input_box_one = document.getElementById("input_box_1")
         let input_box_two = document.getElementById("input_box_2")
         let input_box_three = document.getElementById("input_box_3")
@@ -17,6 +19,7 @@
 
         const data = {}
 
+        // adding weight to local storage
         function addWeight(){
             let weight_one;
             let weight_two;
@@ -44,6 +47,7 @@
             }
         }
 
+        // adding heaight to local storage
         function addHeight(){
 
             if(height_units.value == "m"){
@@ -60,6 +64,7 @@
             }
         }
 
+        // adding gender
         function femaleData(){
             data.gender = "female"
             input_box_three.style.display = "none"
@@ -72,6 +77,7 @@
             input_box_four.style.display = "block"
         }
 
+        // adding date of birth
         function addBirth(){
             let year = "";
             for (let i = 0; i < birthday.value.length; i++){
@@ -88,6 +94,8 @@
         }
         let output = {}
         let arr;
+
+        // Getting all data from storage and calculating the calorie count
         function getData(){
             let calories = (data.weight - data.desired_weight) * 7700
             let weight_loss = data.weight - data.desired_weight;
@@ -122,6 +130,7 @@
             div()
         }
         
+        // appending all data showing weight, calorie, days required for final div
         function div(){
             let url = "https://assets.loseit.com/website/onboarding/PlanWatermelon.svg"
             let div = document.createElement("div")
@@ -129,7 +138,7 @@
 
             let header = document.createElement("h2")
             header.innerHTML = "Your personal weight loss plan is ready."
-
+            // total calorie count
             let child_div_one = document.createElement("div")
             child_div_one.setAttribute("class", "flex_box")
             let image_one = document.createElement("img")
@@ -145,7 +154,7 @@
             child_div_one.appendChild(div_one)
             
 
-
+            // Weight to loose
             let child_div_two = document.createElement("div")
             child_div_two.setAttribute("class", "flex_box")
             let image_two = document.createElement("img")
@@ -160,6 +169,7 @@
             child_div_two.appendChild(image_two)
             child_div_two.appendChild(div_two)
 
+            // total calorie loss
             let child_div_three = document.createElement("div")
             child_div_three.setAttribute("class", "flex_box")
             let image_three = document.createElement("img")
@@ -174,6 +184,7 @@
             child_div_three.appendChild(image_three)
             child_div_three.appendChild(div_three)
 
+            // time required
             let child_div_four = document.createElement("div")
             child_div_four.setAttribute("class", "flex_box")
             let image_four = document.createElement("img")
@@ -188,11 +199,13 @@
             child_div_four.appendChild(image_four)
             child_div_four.appendChild(div_four)
             
+            // redirecting to dashboard on click of button
             let btn = document.createElement("a")
             btn.innerHTML = "Home"
             btn.setAttribute("class", "btn_input")
             btn.setAttribute("href", "../html/homepage.html")
 
+            // appending all data
             div.appendChild(header)
             div.appendChild(child_div_one)
             div.appendChild(child_div_two)
