@@ -6,7 +6,7 @@
 1) Use `git clone` to clone the repository.
 2) Install required dependencies with `npm install`.
 3) Run the server with `npm start`.
-### Live demo available here  
+### Live demo of this project available here  https://looseit.netlify.app/
 
  ## Tech Stacks Used:
 - **HTML**
