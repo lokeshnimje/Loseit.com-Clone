@@ -2,6 +2,12 @@
 # Cloned "loseit.com".
 **Loseit.com** is a web-application which is used to track daily Calorie count and helps you to loose weight.
 
+## Getting started 📚
+1) Use `git clone` to clone the repository.
+2) Install required dependencies with `npm install`.
+3) Run the server with `npm start`.
+### Live demo available here  
+
  ## Tech Stacks Used:
 - **HTML**
 - **CSS**
