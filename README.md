@@ -2,7 +2,7 @@
 # Cloned "loseit.com".
 **Loseit.com** is a web-application which is used to track daily Calorie count and helps you to loose weight.
 
-### Live demo of this project available here  https://looseit.netlify.app/
+### [Click here to run Live demo](https://looseit.netlify.app/)
 
  ## Tech Stacks Used:
 - **HTML**
